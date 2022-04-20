@@ -18,7 +18,7 @@ header {
   box-sizing: border-box;
 }
 
-#topHead, 
+#topHead,
 #bottomHead {
   display: flex;
   margin-left: 24px;
