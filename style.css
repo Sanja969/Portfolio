@@ -1,8 +1,13 @@
-*{
+* {
   color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
 }
+
+/* header block */
+
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 375px;
   height: 92px;
@@ -11,9 +16,47 @@ header {
   left:0;
   top:0;
   box-sizing: border-box;
- 
-  
 }
+#topHead, #bottomHead {
+  display: flex;
+  margin-left: 24px;
+}
+#time {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+  width: 54px;
+  text-align: center;
+  margin-top:16px;
+  margin-bottom: 24px;
+}
+#appBar {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 170px;
+}
+.app {
+  margin: 5px;
+  list-style: none;
+}
+#logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top:0px;
+  margin-bottom: 24px;
+}
+.unionImg{
+  display: flex;
+  align-items: center;
+  margin-left: 190px;
+  margin-top:5px;
+}
+
+/* headline block */
 
 #headline {
   display: flex;
@@ -29,56 +72,6 @@ header {
   box-sizing: border-box;
   background-color: #1C1A19;
 }
-
-#topHead {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-left: 24px;
-
-}
-
-
-#bottomHead{
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  box-sizing: border-box;
-  margin-right: 19px;
-
-}
-#mobStatus{
-  display: flex;
-  margin-top: 10px;;
-}
-.imgStatus{
-  margin: 5px;
-}
-
-#logo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  margin-top:0px;
-  margin-bottom: 24px;
-}
-
-#time {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.28px;
-  width: 54px;
-  text-align: center;
-  margin-top:16px;
-  margin-bottom: 24px;
-}
-.imgStatus {
-
- list-style: none;
-}
 #title {
   color: #FF6B00;
   font-weight: 400;
@@ -93,7 +86,6 @@ header {
   color: #FFF5E1;
   font-weight: 700;
   font-size: 24px;
-  font-family: 'Inter', sans-serif;
   height: 27px;
   flex-grow: 0;
   margin: 0px 0px;
@@ -104,7 +96,6 @@ header {
 #mainDescription {
   font-weight: 400;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
   line-height: 24px;
   flex-grow: 0;
   margin: 12px 0px;
@@ -119,4 +110,10 @@ header {
   margin-left: 0;
   margin-right: 20px;
   margin-top: 10px;
+}
+#backImg{
+  position: absolute; 
+  bottom: -50px;
+  right: 0;
+
 }
