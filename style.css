@@ -77,6 +77,10 @@ header {
   padding: 120px 24px;
   box-sizing: border-box;
   background-color: #1c1a19;
+  background-image: url("Icons/illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position-x: 228px;
+  background-position-y: 220px;
 }
 
 #title {
@@ -115,16 +119,12 @@ header {
   list-style: none;
   display: flex;
   margin-left: 11px;
+  padding: 0;
+  margin-top: 0;
 }
 
 .imgSoc1 {
   margin-left: 0;
   margin-right: 20px;
   margin-top: 10px;
-}
-
-#backImg {
-  position: absolute;
-  bottom: -50px;
-  right: 0;
 }
