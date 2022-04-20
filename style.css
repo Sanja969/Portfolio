@@ -1,5 +1,5 @@
 * {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
@@ -17,10 +17,12 @@ header {
   top: 0;
   box-sizing: border-box;
 }
+
 #topHead, #bottomHead {
   display: flex;
   margin-left: 24px;
 }
+
 #time {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -32,15 +34,18 @@ header {
   margin-top: 16px;
   margin-bottom: 24px;
 }
+
 #appBar {
   display: flex;
   margin-top: 10px;
   margin-left: 170px;
 }
+
 .app {
   margin: 5px;
   list-style: none;
 }
+
 #logo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -49,6 +54,7 @@ header {
   margin-top: 0px;
   margin-bottom: 24px;
 }
+
 .unionImg{
   display: flex;
   align-items: center;
@@ -68,12 +74,12 @@ header {
   left: 0px;
   top: 92px;
   padding: 120px 24px;
-  border: 1px solid #ffffff;
   box-sizing: border-box;
   background-color: #1c1a19;
 }
+
 #title {
-  color: #FF6B00;
+  color: #ff6b00;
   font-weight: 400;
   font-size: 56px;
   font-family: 'Crete Round', serif;
@@ -82,8 +88,9 @@ header {
   margin: 12px 0px;
   letter-spacing: 0.37px;
 }
+
 #subtitle {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-weight: 700;
   font-size: 24px;
   height: 27px;
@@ -93,6 +100,7 @@ header {
   align-items: center;
   line-height: 32px;
 }
+
 #mainDescription {
   font-weight: 400;
   font-size: 16px;
@@ -101,16 +109,19 @@ header {
   margin: 12px 0px;
   height: 123px;
 }
+
 #socialMedia{
   list-style: none;
   display: flex;
   margin-left: 11px;
 }
+
 .imgSoc1 {
   margin-left: 0;
   margin-right: 20px;
   margin-top: 10px;
 }
+
 #backImg{
   position: absolute; 
   bottom: -50px;
