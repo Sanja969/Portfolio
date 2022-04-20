@@ -1,5 +1,5 @@
 * {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
 
@@ -11,10 +11,10 @@ header {
   justify-content: space-between;
   width: 375px;
   height: 92px;
-  background-color: #3E3C3C;
+  background-color: #3e3c3c;
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   box-sizing: border-box;
 }
 #topHead, #bottomHead {
@@ -29,7 +29,7 @@ header {
   letter-spacing: -0.28px;
   width: 54px;
   text-align: center;
-  margin-top:16px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 #appBar {
@@ -46,14 +46,14 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin-top:0px;
+  margin-top: 0px;
   margin-bottom: 24px;
 }
 .unionImg{
   display: flex;
   align-items: center;
   margin-left: 190px;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 /* headline block */
@@ -68,9 +68,9 @@ header {
   left: 0px;
   top: 92px;
   padding: 120px 24px;
-  border:1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
-  background-color: #1C1A19;
+  background-color: #1c1a19;
 }
 #title {
   color: #FF6B00;
@@ -103,7 +103,7 @@ header {
 }
 #socialMedia{
   list-style: none;
-  display:flex;
+  display: flex;
   margin-left: 11px;
 }
 .imgSoc1 {
@@ -115,5 +115,4 @@ header {
   position: absolute; 
   bottom: -50px;
   right: 0;
-
 }
