@@ -426,7 +426,7 @@ header {
 
 #resumeBtn:disabled,
 .seeProjectBtn:disabled,
-#storyProjectBtn:disabled{
+#storyProjectBtn:disabled {
   background: inherit;
   color: #5b5957;
   border: none;
