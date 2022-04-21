@@ -133,7 +133,7 @@ header {
 
 #work {
   display: grid;
-  grid-template-rows: repeat(8,auto);
+  grid-template-rows: repeat(8, auto);
   margin-top: 802px;
   left: 0;
   width: 375px;
