@@ -2,7 +2,10 @@
 
 # Portfolio
 
-> This is example of portfolio using Figma template. For start I build 2 sections - the header and the headline. For both section I use flex boxes and I stick to style of Figma template.
+> This is example of portfolio using Figma template. For start I build 2 sections - the header and the headline. For both section I use flex boxes and I stick to style of Figma template. 
+In milestone 2 I create Work and aboutMe section. I use flex and grid boxis for these two sections.
+
+
 
 
 ## Built With
