@@ -135,9 +135,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top:682px;
-  left:0;
+  margin-top: 802px;
+  left: 0;
   width: 375px;
 }
 
@@ -182,10 +181,9 @@ header {
   height: 147px;
   font-size: 16px;
   line-height: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 0;
   margin-bottom: 0;
   margin-top: 12px;
-  padding-bottom: 0;
 }
 
 #storyTags {
@@ -194,8 +192,9 @@ header {
   display: grid;
   list-style: none;
   grid-template-columns: 49px 56px 95px 61px;
-  padding-left: 16px;
+  padding-left: 0;
   column-gap: 12px;
+  margin-left: -28.5px;
 }
 
 .tagS {
@@ -214,7 +213,7 @@ header {
   margin-bottom: 12px;
   width: 124px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -229,6 +228,7 @@ header {
   width: 327px;
   height: 386px;
   margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #proWorkTitle {
@@ -276,7 +276,6 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  padding: 10px 12px;
 }
 
 .seeProjectBtn {
@@ -285,7 +284,7 @@ header {
   margin-left: 101.5px;
   width: inherit;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -293,8 +292,120 @@ header {
   transform: translateX(-101.5px);
 }
 
-/* headline block */
+/* aboutMeblock  */
 
 #aboutMeBox {
+  background-color:#1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:108px;
+  left:0;
+  width: 375px;
+  height: 1901px;
+  border: 1 solid black;
+  background-image: url("Icons/aboutMe.png");
+  background-repeat: no-repeat;
+  background-position: 215px 400px;
+}
 
+#aboutMeTitle{
+  font-family: 'Crete Round', serif;
+  color: #ff6b00;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  margin-top: 120px;
+  margin-bottom: 12px;
+}
+
+#aboutMeDesc {
+  color: #f4f5f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 327px;
+  height: 148px;
+}
+
+#resumeBtn {
+  margin-top: 12px;
+  margin-bottom: 209px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  transform: translateX(-81.5px);
+  width: 161px;
+  height: 48px;
+}
+
+.line {
+  width: 327px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 136px;
+}
+
+#skillsBox {
+  list-style: none;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 44px;
+  padding-left: 0;
+}
+
+.filedOfSkill > ul{
+  list-style: none;
+  display: grid;
+  grid-template-rows: 24px 24px 24px 24px 24px;
+  row-gap: 32px;
+  padding: 0;
+}
+
+.ro,
+.rec,
+.cir {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  margin-right: 12px;
+}
+
+.skillTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  height: 24px;
+  align-items: center;
+}
+
+.ro {
+  transform: rotate(45deg);
+}
+
+.cir {
+  border-radius: 100%;
+}
+
+.skill {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x {
+  margin-top: -56px;
 }
