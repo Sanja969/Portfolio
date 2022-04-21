@@ -231,7 +231,7 @@ header {
   margin-bottom: 12px;
 }
 
-#proWorkTitle {
+.proWorkTitle {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   width: 295px;
@@ -245,7 +245,7 @@ header {
   align-items: center;
 }
 
-#proWorkDesc {
+.proWorkDesc {
   margin-top: 12px;
   margin-bottom: 0;
   margin-left: 16px;
@@ -256,7 +256,7 @@ header {
   height: 87px;
 }
 
-#proTags {
+.proTags {
   margin-top: 12px;
   margin-bottom: 12px;
   display: grid;
@@ -295,12 +295,12 @@ header {
 /* aboutMeblock  */
 
 #aboutMeBox {
-  background-color:#1c1a19;
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:108px;
-  left:0;
+  margin-top: 108px;
+  left: 0;
   width: 375px;
   height: 1901px;
   border: 1 solid black;
@@ -309,7 +309,7 @@ header {
   background-position: 215px 400px;
 }
 
-#aboutMeTitle{
+#aboutMeTitle {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
   font-weight: 400;
@@ -334,8 +334,6 @@ header {
 #resumeBtn {
   margin-top: 12px;
   margin-bottom: 209px;
-  width: 124px;
-  height: 48px;
   background: #ff6b00;
   font-weight: 700;
   font-size: 17px;
@@ -360,7 +358,7 @@ header {
   padding-left: 0;
 }
 
-.filedOfSkill > ul{
+.filedOfSkill > ul {
   list-style: none;
   display: grid;
   grid-template-rows: 24px 24px 24px 24px 24px;
@@ -408,4 +406,28 @@ header {
 
 .x {
   margin-top: -56px;
+}
+
+#resumeBtn:hover,
+.seeProjectBtn:hover,
+#storyProjectBtn:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+#resumeBtn:active,
+.seeProjectBtn:active,
+#storyProjectBtn:active {
+  background: #e05304;
+  color: #fff;
+  border: 1px solid #f55800;
+}
+
+#resumeBtn:disabled,
+.seeProjectBtn:disabled,
+#storyProjectBtn:disabled{
+  background: inherit;
+  color: #5b5957;
+  border: none;
 }
