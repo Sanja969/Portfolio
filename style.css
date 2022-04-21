@@ -129,7 +129,9 @@ header {
   margin-top: 10px;
 }
 
-#main {
+/* work block */
+
+#work {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,20 +189,17 @@ header {
 }
 
 #storyTags {
-  list-style: none;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 327px;
-  padding-left: 0;
   margin-top: 12px;
+  margin-bottom: 0;
+  display: grid;
+  list-style: none;
+  grid-template-columns: 49px 56px 95px 61px;
+  padding-left: 16px;
+  column-gap: 12px;
 }
 
 .tagS {
   color: #091e42;
-  text-align: center;
-  margin-left: 0;
-  margin-right: 12px;
   padding: 10px 12px;
   border: 1px solid #8993a4;
   box-sizing: border-box;
@@ -208,7 +207,6 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 0;
 }
 
 #storyProjectBtn {
@@ -222,4 +220,81 @@ header {
   line-height: 24px;
   border: none;
   transform: translateX(-101.5px);
+}
+
+.workProject {
+  display: flex;
+  flex-direction: column;
+  background-image: url("Icons/workBackground.png");
+  width: 327px;
+  height: 386px;
+  margin-top: 12px;
+}
+
+#proWorkTitle {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  width: 295px;
+  height: 81px;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 0;
+  margin-top: 84px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#proWorkDesc {
+  margin-top: 12px;
+  margin-bottom: 0;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 295px;
+  height: 87px;
+}
+
+#proTags {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: grid;
+  list-style: none;
+  grid-template-columns: auto auto auto;
+  padding-left: 16px;
+  column-gap: 12px;
+  width: 236px;
+}
+
+.tagP {
+  text-align: center;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+  box-sizing: border-box;
+  height: 40px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+}
+
+.seeProjectBtn {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 101.5px;
+  width: inherit;
+  height: 48px;
+  background: #FF6B00;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  transform: translateX(-101.5px);
+}
+
+/* headline block */
+
+#aboutMeBox {
+
 }
