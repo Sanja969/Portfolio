@@ -128,3 +128,98 @@ header {
   margin-right: 20px;
   margin-top: 10px;
 }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top:682px;
+  left:0;
+  width: 375px;
+}
+
+#workTitle {
+  color: #1c1a19;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  border-bottom: 1px solid #212121;
+  width: 327px;
+  height: 83px;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  margin-bottom: 0;
+}
+
+#workImage {
+  margin-top: 80px;
+  margin-bottom: 12px;
+}
+
+#storyTitle {
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  width: 327px;
+  height: 36px;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 0;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#storyParagr {
+  color: #091e42;
+  font-weight: 400;
+  width: 327px;
+  height: 147px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 0;
+  margin-top: 12px;
+  padding-bottom: 0;
+}
+
+#storyTags {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 327px;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.tagS {
+  color: #091e42;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 12px;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  height: 40px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+#storyProjectBtn {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 124px;
+  height: 48px;
+  background: #FF6B00;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  transform: translateX(-101.5px);
+}
