@@ -132,12 +132,13 @@ header {
 /* work block */
 
 #work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(8,auto);
   margin-top: 802px;
   left: 0;
   width: 375px;
+  align-items: center;
+  justify-content: center;
 }
 
 #workTitle {
@@ -217,7 +218,6 @@ header {
   font-size: 17px;
   line-height: 24px;
   border: none;
-  transform: translateX(-101.5px);
 }
 
 .workProject {
@@ -299,7 +299,8 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 108px;
-  left: 0;
+  margin-left: 0;
+  padding-left: 0;
   width: 375px;
   height: 1901px;
   border: 1 solid black;
