@@ -258,12 +258,9 @@ header {
 .proTags {
   margin-top: 12px;
   margin-bottom: 12px;
-  display: grid;
   list-style: none;
-  grid-template-columns: auto auto auto;
   padding-left: 16px;
-  column-gap: 12px;
-  width: 236px;
+  width: 300px;
 }
 
 .tagP {
@@ -275,6 +272,8 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  float: left;
+  margin-right: 12px;
 }
 
 .seeProjectBtn {
