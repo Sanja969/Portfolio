@@ -428,7 +428,7 @@ header {
   text-align: center;
   color: #172b4d;
   width: 327px;
-  margin:120px 24px 73px 24px;
+  margin: 120px 24px 73px 24px;
 }
 
 #contactForm {
@@ -449,7 +449,7 @@ header {
   box-sizing: border-box;
   width: 327px;
   border: none;
-  border-bottom: 1px solid #dBd8d7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 #msg-contact {
@@ -461,8 +461,7 @@ header {
 .inputContact:focus,
 #msg-contact:focus {
   outline: none !important;
-  border:1px solid #f55800;
-
+  border: 1px solid #f55800;
 }
 
 .submit-contact {
