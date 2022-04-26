@@ -125,7 +125,7 @@ header {
   height: 123px;
 }
 
-#socialMedia {
+.socialMedia {
   list-style: none;
   display: flex;
   margin-left: 11px;
