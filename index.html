@@ -197,27 +197,30 @@
             <h2 id="contact-title">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
-            <form action="" method="post">
+            <form action="/my-handling-form-page" method="post" id="contactForm">
               
                 <label>
-                    <input type="text" id="name-contact" name="user_name" placeholder="Full name" maxlength="30"/>
+                    <input type="text" id="name-contact" class="inputContact" name="user_name" placeholder="Full name" maxlength="30"/>
                 </label>
                 <label>
-                    <input type="email" id="mail-contact" name="user_email" placeholder="Email address"/>
+                    <input type="email" id="mail-contact" class="inputContact" name="user_email" placeholder="Email address"/>
                 </label>
                 <label>
-                    <textarea id="msg-contact" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+                    <textarea id="msg-contact" class="inputContact" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
                 </label>
                 <input type="submit" name="submit" value="Get in touch" class="submit-contact orangeBtn"/>
             </form>
-            <ul class="socialMedia">
-                <li class="imgSoc1"><img src="Icons/Icon-GitHub.png" alt="GitHub Icon" width="18" height="20"></li>
-                <li class="imgSoc1"><img src="Icons/Icon-Linkedin.png" alt="LinkedIn Icon" width="18" height="20"></li>
-                <li class="imgSoc1"><img src="Icons/Icon-Angelist.png" alt="Angelist Icon" width="18" height="20"></li>
-                <li class="imgSoc1"><img src="Icons/Icon-Twitter.png" alt="Twitter Icon" width="18" height="20"></li>
-                <li class="imgSoc1"><img src="Icons/Icon-Medium.png" alt="Medium Icon" width="18" height="20"></li>
-            </ul>
         </section>
+        <footer>
+            <ul class="socialMedia">
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-GitHub.png" alt="GitHub Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Linkedin.png" alt="LinkedIn Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Angelist.png" alt="Angelist Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Twitter.png" alt="Twitter Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Medium.png" alt="Medium Icon" width="18" height="20"></li>
+            </ul>
+            <div class="headerLine"></div>
+        </footer>
     </body>
 </html>
 
