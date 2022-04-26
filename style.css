@@ -3,6 +3,16 @@
   font-family: 'Inter', sans-serif;
 }
 
+.orangeBtn {
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
 /* header block */
 
 header {
@@ -208,16 +218,10 @@ header {
   line-height: 20px;
 }
 
-#storyProjectBtn {
+.storyProjectBtn {
   margin-top: 12px;
   margin-bottom: 12px;
   width: 124px;
-  height: 48px;
-  background: #ff6b00;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
 }
 
 .workProject {
@@ -282,12 +286,6 @@ header {
   margin-bottom: 0;
   margin-left: 101.5px;
   width: inherit;
-  height: 48px;
-  background: #ff6b00;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
   transform: translateX(-101.5px);
 }
 
@@ -331,17 +329,19 @@ header {
   height: 148px;
 }
 
-#resumeBtn {
+.resumeBtn {
   margin-top: 12px;
   margin-bottom: 209px;
-  background: #ff6b00;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
   transform: translateX(-81.5px);
   width: 161px;
-  height: 48px;
+}
+
+.seeProjectBtn {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 101.5px;
+  width: inherit;
+  transform: translateX(-101.5px);
 }
 
 .line {
@@ -408,26 +408,32 @@ header {
   margin-top: -56px;
 }
 
-#resumeBtn:hover,
-.seeProjectBtn:hover,
-#storyProjectBtn:hover {
+.orangeBtn:hover {
   background: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
 }
 
-#resumeBtn:active,
-.seeProjectBtn:active,
-#storyProjectBtn:active {
+.orangeBtn:active {
   background: #e05304;
   color: #fff;
   border: 1px solid #f55800;
 }
 
-#resumeBtn:disabled,
-.seeProjectBtn:disabled,
-#storyProjectBtn:disabled {
+.orangeBtn:disabled {
   background: inherit;
   color: #5b5957;
   border: none;
+}
+
+/* contact section */
+
+label {
+  color: black;
+}
+input {
+  color: black;
+}
+textarea {
+  color: black;
 }
