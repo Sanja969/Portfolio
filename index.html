@@ -200,13 +200,13 @@
             <form action="/my-handling-form-page" method="post" id="contactForm">
               
                 <label>
-                    <input type="text" id="name-contact" class="inputContact" name="user_name" placeholder="Full name" maxlength="30"/>
+                    <input type="text" id="name-contact" class="inputContact" name="user_name" placeholder="Full name" maxlength="30" required/>
                 </label>
                 <label>
-                    <input type="email" id="mail-contact" class="inputContact" name="user_email" placeholder="Email address"/>
+                    <input type="email" id="mail-contact" class="inputContact" name="user_email" placeholder="Email address" required/>
                 </label>
                 <label>
-                    <textarea id="msg-contact" class="inputContact" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+                    <textarea id="msg-contact" class="inputContact" name="user_message" placeholder="Enter text here" maxlength="500" required></textarea>
                 </label>
                 <input type="submit" name="submit" value="Get in touch" class="submit-contact orangeBtn"/>
             </form>
