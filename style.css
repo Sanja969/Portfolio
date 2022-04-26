@@ -3,6 +3,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  width: 375px;
+}
+
 .orangeBtn {
   width: 124px;
   height: 48px;
@@ -22,9 +26,6 @@ header {
   width: 375px;
   height: 92px;
   background-color: #3e3c3c;
-  position: absolute;
-  left: 0;
-  top: 0;
   box-sizing: border-box;
 }
 
@@ -81,9 +82,6 @@ header {
   justify-content: center;
   width: 375px;
   height: 590px;
-  position: absolute;
-  left: 0;
-  top: 92px;
   padding: 120px 24px;
   box-sizing: border-box;
   background-color: #1c1a19;
@@ -144,9 +142,6 @@ header {
 #work {
   display: grid;
   grid-template-rows: repeat(8, auto);
-  margin-top: 802px;
-  left: 0;
-  width: 375px;
   align-items: center;
   justify-content: center;
 }
@@ -162,6 +157,7 @@ header {
   line-height: 52px;
   display: flex;
   align-items: center;
+  padding-top: 120px;
   padding-bottom: 24px;
   margin-bottom: 0;
 }
@@ -336,14 +332,6 @@ header {
   width: 161px;
 }
 
-.seeProjectBtn {
-  margin-top: 10px;
-  margin-bottom: 0;
-  margin-left: 101.5px;
-  width: inherit;
-  transform: translateX(-101.5px);
-}
-
 .line {
   width: 327px;
   border-bottom: 1px solid #fff;
@@ -428,12 +416,73 @@ header {
 
 /* contact section */
 
-label {
-  color: black;
+#contact-section {
+  width: 375px;
+  box-sizing: border-box;
 }
-input {
-  color: black;
+
+#contact-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  width: 327px;
+  margin:120px 24px 73px 24px;
 }
-textarea {
-  color: black;
+
+#contactForm {
+  width: 327px;
+  margin: 0 24px;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 36px;
+}
+
+.inputContact {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  padding: 0 16px 14px 16px;
+  box-sizing: border-box;
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dBd8d7;
+}
+
+#msg-contact {
+  border: none;
+  padding: 12px;
+  height: 114px;
+}
+
+.inputContact:focus,
+#msg-contact:focus {
+  outline: none !important;
+  border:1px solid #f55800;
+
+}
+
+.submit-contact {
+  width: 131px;
+  margin-left: 98px;
+  margin-top: -12px;
+}
+
+footer {
+  padding: 25px 95px;
+  border-top: 1px solid #dfe1e6;
+  margin: 124px 0 8px 0;
+}
+
+.footerIcon {
+  filter: invert(80%);
+}
+
+.headerLine {
+  border-top: 5px solid #0d151e;
+  margin-left: 36px;
+  width: 134px;
 }
