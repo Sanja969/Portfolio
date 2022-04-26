@@ -196,11 +196,9 @@ header {
 #storyTags {
   margin-top: 12px;
   margin-bottom: 0;
-  display: grid;
   list-style: none;
-  grid-template-columns: 49px 56px 95px 61px;
   padding-left: 0;
-  column-gap: 12px;
+
 }
 
 .tagS {
@@ -212,6 +210,8 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  float: left;
+  margin-left: 12px;
 }
 
 .storyProjectBtn {
