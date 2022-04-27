@@ -1,10 +1,21 @@
 * {
   color: #fff;
   font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 body {
   width: 375px;
+}
+
+.normalTitle {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .orangeBtn {
@@ -21,41 +32,13 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 375px;
   height: 92px;
   background-color: #3e3c3c;
   box-sizing: border-box;
-}
-
-#topHead,
-#bottomHead {
-  display: flex;
-  margin-left: 24px;
-}
-
-#time {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.28px;
-  width: 54px;
-  text-align: center;
-  margin-top: 16px;
-  margin-bottom: 24px;
-}
-
-#appBar {
-  display: flex;
-  margin-top: 10px;
-  margin-left: 170px;
-}
-
-.app {
-  margin: 5px;
-  list-style: none;
+  padding: 12px 24px;
 }
 
 #logo {
@@ -63,15 +46,6 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-
-.unionImg {
-  display: flex;
-  align-items: center;
-  margin-left: 190px;
-  margin-top: 5px;
 }
 
 /* headline block */
@@ -93,7 +67,6 @@ header {
 
 #title {
   color: #ff6b00;
-  font-weight: 400;
   font-size: 56px;
   font-family: 'Crete Round', serif;
   line-height: 64px;
@@ -115,9 +88,6 @@ header {
 }
 
 #mainDescription {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   flex-grow: 0;
   margin: 12px 0;
   height: 123px;
@@ -148,15 +118,11 @@ header {
 
 #workTitle {
   color: #1c1a19;
-  font-family: 'Crete Round', serif;
-  font-weight: 400;
   border-bottom: 1px solid #212121;
   width: 327px;
   height: 83px;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   padding-top: 120px;
   padding-bottom: 24px;
   margin-bottom: 0;
@@ -169,25 +135,16 @@ header {
 
 #storyTitle {
   color: #091e42;
-  font-family: 'Crete Round', serif;
-  font-weight: 400;
   width: 327px;
   height: 36px;
-  font-size: 32px;
-  line-height: 44px;
   margin-bottom: 0;
   margin-top: 12px;
-  display: flex;
-  align-items: center;
 }
 
 #storyParagr {
   color: #091e42;
-  font-weight: 400;
   width: 327px;
   height: 147px;
-  font-size: 16px;
-  line-height: 24px;
   padding-bottom: 0;
   margin-bottom: 0;
   margin-top: 12px;
@@ -229,26 +186,17 @@ header {
 }
 
 .proWorkTitle {
-  font-family: 'Crete Round', serif;
-  font-weight: 400;
   width: 295px;
   height: 81px;
-  font-size: 32px;
-  line-height: 44px;
   margin-bottom: 0;
   margin-top: 84px;
   margin-left: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .proWorkDesc {
   margin-top: 12px;
   margin-bottom: 0;
   margin-left: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   width: 295px;
   height: 87px;
 }
@@ -304,7 +252,6 @@ header {
 #aboutMeTitle {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
-  font-weight: 400;
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
@@ -314,9 +261,6 @@ header {
 
 #aboutMeDesc {
   color: #f4f5f7;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   margin-top: 12px;
   margin-bottom: 12px;
   width: 327px;
@@ -362,15 +306,12 @@ header {
 }
 
 .skillTitle {
-  display: flex;
+  font-family: 'Inter', sans-serif;
   justify-content: center;
   margin-top: 0;
   margin-bottom: 44px;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
   height: 24px;
-  align-items: center;
 }
 
 .ro {
@@ -382,7 +323,6 @@ header {
 }
 
 .skill {
-  font-weight: 400;
   font-size: 22px;
   line-height: 43px;
   display: flex;
@@ -439,9 +379,7 @@ header {
 }
 
 .inputContact {
-  font-weight: 400;
   font-size: 15px;
-  line-height: 24px;
   color: #3c3a39;
   padding: 0 16px 14px 16px;
   box-sizing: border-box;
