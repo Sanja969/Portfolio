@@ -7,7 +7,6 @@
 }
 
 body {
-  width: 375px;
   font: normal 100% Helvetica, 'Inter', sans-serif;
 }
 
@@ -35,7 +34,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 375px;
+  width: 23.4375em;
   height: 92px;
   background-color: #3e3c3c;
   box-sizing: border-box;
@@ -55,7 +54,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 375px;
+  width: 23.4375em;
   height: 590px;
   padding: 120px 24px;
   box-sizing: border-box;
@@ -115,6 +114,7 @@ header {
   grid-template-rows: repeat(8, auto);
   align-items: center;
   justify-content: center;
+  width: 23.4375em;
 }
 
 #workTitle {
@@ -243,7 +243,7 @@ header {
   margin-top: 108px;
   margin-left: 0;
   padding-left: 0;
-  width: 375px;
+  width: 23.4375em;
   height: 1901px;
   border: 1 solid black;
   background-image: url("Icons/aboutMe.png");
@@ -357,7 +357,7 @@ header {
 /* contact section */
 
 #contact-section {
-  width: 375px;
+  width: 23.4375em;
   box-sizing: border-box;
 }
 
