@@ -1,18 +1,19 @@
 * {
   color: #fff;
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   font-weight: 400;
 }
 
 body {
   width: 375px;
+  font: normal 100% Helvetica, 'Inter', sans-serif;
 }
 
 .normalTitle {
   font-family: 'Crete Round', serif;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
   display: flex;
   align-items: center;
@@ -23,7 +24,7 @@ body {
   height: 48px;
   background: #ff6b00;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.0625em;
   line-height: 24px;
   border: none;
 }
@@ -44,7 +45,7 @@ header {
 #logo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 24px;
 }
 
@@ -67,7 +68,7 @@ header {
 
 #title {
   color: #ff6b00;
-  font-size: 56px;
+  font-size: 3.5em;
   font-family: 'Crete Round', serif;
   line-height: 64px;
   flex-grow: 0;
@@ -78,7 +79,7 @@ header {
 #subtitle {
   color: #fff5e1;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5em;
   height: 27px;
   flex-grow: 0;
   margin: 0;
@@ -121,7 +122,7 @@ header {
   border-bottom: 1px solid #212121;
   width: 327px;
   height: 83px;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 52px;
   padding-top: 120px;
   padding-bottom: 24px;
@@ -164,9 +165,10 @@ header {
   box-sizing: border-box;
   height: 40px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375em;
   line-height: 20px;
   float: left;
+  margin-right: 12px;
 }
 
 .storyProjectBtn {
@@ -219,7 +221,7 @@ header {
   box-sizing: border-box;
   height: 40px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375em;
   line-height: 20px;
 }
 
@@ -252,7 +254,7 @@ header {
 #aboutMeTitle {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
-  font-size: 72px;
+  font-size: 4.5em;
   line-height: 88px;
   letter-spacing: 0.37px;
   margin-top: 120px;
@@ -323,7 +325,7 @@ header {
 }
 
 .skill {
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 43px;
   display: flex;
   align-items: center;
@@ -361,7 +363,7 @@ header {
 
 #contact-title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
@@ -379,7 +381,7 @@ header {
 }
 
 .inputContact {
-  font-size: 15px;
+  font-size: 0.9375em;
   color: #3c3a39;
   padding: 0 16px 14px 16px;
   box-sizing: border-box;
