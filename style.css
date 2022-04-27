@@ -19,7 +19,6 @@ body {
 }
 
 .orangeBtn {
-  width: 124px;
   height: 48px;
   background: #ff6b00;
   font-weight: 700;
@@ -38,7 +37,7 @@ header {
   height: 92px;
   background-color: #3e3c3c;
   box-sizing: border-box;
-  padding: 12px 24px;
+  padding: 12px 1.6%;
 }
 
 #logo {
@@ -56,12 +55,12 @@ header {
   justify-content: center;
   width: 23.4375em;
   height: 590px;
-  padding: 120px 24px;
+  padding: 120px 1.6%;
   box-sizing: border-box;
   background-color: #1c1a19;
   background-image: url("Icons/illustration-header-mobile.png");
   background-repeat: no-repeat;
-  background-position-x: 228px;
+  background-position-x: 100%;
   background-position-y: 220px;
 }
 
@@ -114,13 +113,13 @@ header {
   grid-template-rows: repeat(8, auto);
   align-items: center;
   justify-content: center;
-  width: 23.4375em;
+  width: 20.4375em;
+  margin-left: 2em;
 }
 
 #workTitle {
   color: #1c1a19;
   border-bottom: 1px solid #212121;
-  width: 327px;
   height: 83px;
   font-size: 2.5em;
   line-height: 52px;
@@ -136,7 +135,6 @@ header {
 
 #storyTitle {
   color: #091e42;
-  width: 327px;
   height: 36px;
   margin-bottom: 0;
   margin-top: 12px;
@@ -144,7 +142,6 @@ header {
 
 #storyParagr {
   color: #091e42;
-  width: 327px;
   height: 147px;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -160,7 +157,7 @@ header {
 
 .tagS {
   color: #091e42;
-  padding: 10px 12px;
+  padding: 10px 3.2%;
   border: 1px solid #8993a4;
   box-sizing: border-box;
   height: 40px;
@@ -174,32 +171,31 @@ header {
 .storyProjectBtn {
   margin-top: 12px;
   margin-bottom: 12px;
-  width: 124px;
+  width: 37.92%;
 }
 
 .workProject {
   display: flex;
   flex-direction: column;
   background-image: url("Icons/workBackground.png");
-  width: 327px;
   height: 386px;
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
 .proWorkTitle {
-  width: 295px;
+  width: 90.214%;
   height: 81px;
   margin-bottom: 0;
   margin-top: 84px;
-  margin-left: 16px;
+  margin-left: 4.9%;
 }
 
 .proWorkDesc {
   margin-top: 12px;
   margin-bottom: 0;
-  margin-left: 16px;
-  width: 295px;
+  margin-left: 4.9%;
+  width: 90.214%;
   height: 87px;
 }
 
@@ -209,14 +205,14 @@ header {
   display: grid;
   list-style: none;
   grid-template-columns: auto auto auto;
-  padding-left: 16px;
-  column-gap: 12px;
-  width: 236px;
+  padding-left: 4.9%;
+  column-gap: 4.8%;
+  width: 72.17%;
 }
 
 .tagP {
   text-align: center;
-  padding: 10px 12px;
+  padding: 10px 3.6%;
   background-color: rgba(255, 255, 255, 0.24);
   box-sizing: border-box;
   height: 40px;
@@ -228,9 +224,7 @@ header {
 .seeProjectBtn {
   margin-top: 10px;
   margin-bottom: 0;
-  margin-left: 101.5px;
   width: inherit;
-  transform: translateX(-101.5px);
 }
 
 /* aboutMeblock  */
@@ -248,7 +242,7 @@ header {
   border: 1 solid black;
   background-image: url("Icons/aboutMe.png");
   background-repeat: no-repeat;
-  background-position: 215px 400px;
+  background-position: 100% 400px;
 }
 
 #aboutMeTitle {
@@ -265,7 +259,7 @@ header {
   color: #f4f5f7;
   margin-top: 12px;
   margin-bottom: 12px;
-  width: 327px;
+  width: 87.2%;
   height: 148px;
 }
 
@@ -273,11 +267,11 @@ header {
   margin-top: 12px;
   margin-bottom: 209px;
   transform: translateX(-81.5px);
-  width: 161px;
+  width: 42.933%;
 }
 
 .line {
-  width: 327px;
+  width: 87.2%;
   border-bottom: 1px solid #fff;
   margin-bottom: 136px;
 }
@@ -367,12 +361,12 @@ header {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  width: 327px;
+  width: 87.2%;
   margin: 120px 24px 73px 24px;
 }
 
 #contactForm {
-  width: 327px;
+  width: 87.2%;
   margin: 0 24px;
   padding: 0;
   display: grid;
@@ -385,7 +379,7 @@ header {
   color: #3c3a39;
   padding: 0 16px 14px 16px;
   box-sizing: border-box;
-  width: 327px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #dbd8d7;
 }
@@ -403,23 +397,27 @@ header {
 }
 
 .submit-contact {
-  width: 131px;
+  width: 40.06%;
   margin-left: 98px;
   margin-top: -12px;
 }
 
 footer {
-  padding: 25px 95px;
+  width: 23.4375em;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-top: 1px solid #dfe1e6;
   margin: 124px 0 8px 0;
+  box-sizing: border-box;
 }
 
 .footerIcon {
   filter: invert(80%);
 }
 
-.headerLine {
+.footerLine {
   border-top: 5px solid #0d151e;
-  margin-left: 36px;
-  width: 134px;
+  width: 35.73%;
 }
