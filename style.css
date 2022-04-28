@@ -9,7 +9,6 @@
 body {
   font: normal 100% Helvetica, 'Inter', sans-serif;
   width: 100%;
-  
 }
 
 main {
@@ -62,7 +61,7 @@ header {
 }
 
 #logo:hover {
-  color:greenyellow;
+  color: greenyellow;
   font-size: 1.25em;
 }
 
@@ -703,3 +702,4 @@ footer {
     margin: auto 0 0 0;
   }
 }
+
