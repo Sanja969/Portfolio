@@ -157,7 +157,7 @@ header {
 
 #storyTitle {
   color: #091e42;
-  height: 36px;
+  height: auto;
   margin-bottom: 0;
   margin-top: 12px;
 }
@@ -218,7 +218,7 @@ header {
   margin-bottom: 0;
   margin-left: 4.9%;
   width: 90.214%;
-  height: 87px;
+  height: auto;
 }
 
 .proTags {
@@ -550,9 +550,10 @@ footer {
   #workImage {
     margin-top: 114px;
     margin-bottom: 12px;
-    width: 684px;
+    max-width: 684px;
     height: 448px;
     margin-right: 24px;
+    width: 50vw;
   }
 
   .story-con {
@@ -590,9 +591,11 @@ footer {
   }
 
   .workProject {
-    width: 369px;
+    width: 30vw;
+    max-width: 369px;
     height: 435px;
     margin: 0;
+    
   }
 
   .proWorkTitle {
