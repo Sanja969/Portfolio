@@ -94,13 +94,14 @@ header {
   flex-grow: 0;
   margin: 12px 0;
   letter-spacing: 0.37px;
+  height: auto;
 }
 
 #subtitle {
   color: #fff5e1;
   font-weight: 700;
   font-size: 1.5em;
-  height: 27px;
+  height: auto;
   flex-grow: 0;
   margin: 0;
   display: flex;
@@ -281,11 +282,11 @@ header {
   margin-top: 12px;
   margin-bottom: 12px;
   width: 87.2%;
-  height: 148px;
+  height: auto;
 }
 
 .resumeBtn {
-  margin-top: 12px;
+  margin-top: 36px;
   margin-bottom: 209px;
   width: 42.933%;
 }
