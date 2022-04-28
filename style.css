@@ -571,6 +571,10 @@ footer {
     margin: 0;
   }
 
+  .proWorkTitle {
+    margin-top: 178px;
+  }
+
   .seeProjectBtn {
     display: none;
   }
@@ -656,5 +660,30 @@ footer {
 
   .footerLine {
     display: none;
+  }
+  .a1 {
+    padding-top: 100px;
+    background-image: url("Icons/article1.png");
+  }
+
+  .a2 {
+    background-image: url("Icons/article2.png");
+  }
+
+  .a3 {
+    background-image: url("Icons/article3.png");
+  }
+
+  .a4 {
+    background-image: url("Icons/article4.png");
+  }
+
+  .a1 > * {
+    display: none;
+  }
+
+  .a1 button {
+    display: block;
+    margin: auto 0 0 0;
   }
 }
