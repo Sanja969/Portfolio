@@ -41,7 +41,7 @@ header {
   height: 72px;
   background-color: #3e3c3c;
   box-sizing: border-box;
-  padding: 12px 1.6%;
+  padding: 12px 5%;
 }
 
 #logo {
@@ -62,7 +62,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 590px;
-  padding: 120px 1.6%;
+  padding: 120px 5%;
   box-sizing: border-box;
   background-color: #1c1a19;
   background-image: url("Icons/illustration-header-mobile.png");
