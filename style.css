@@ -512,6 +512,11 @@ footer {
 
   /* work block */
 
+  #work {
+    width: 70%;
+    align-items: center;
+  }
+
   #workTitle-label {
     display: grid;
     grid-template-columns: auto auto;
@@ -539,14 +544,13 @@ footer {
   #storyBox {
     display: flex;
     justify-content: center;
-    margin-left: 25%;
   }
 
   #workImage {
     margin-top: 114px;
     margin-bottom: 12px;
-    width: 70%;
-    height: auto;
+    width: 684px;
+    height: 448px;
     margin-right: 24px;
   }
 
@@ -564,7 +568,7 @@ footer {
     margin-top: 12px;
     font-size: 1.25em;
     line-height: 28px;
-    width: 50%;
+    width: 90%;
     height: auto;
   }
 
