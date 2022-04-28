@@ -9,13 +9,15 @@
 body {
   font: normal 100% Helvetica, 'Inter', sans-serif;
   width: 100%;
+  
 }
 
 main {
+  margin-left: -8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 23em;
+  width: 100%;
 }
 
 .normalTitle {
@@ -38,10 +40,12 @@ main {
 /* header block */
 
 header {
+  margin-top: -8px;
+  margin-left: -8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 23em;
+  width: 100%;
   height: 72px;
   background-color: #3e3c3c;
   box-sizing: border-box;
@@ -53,6 +57,13 @@ header {
   font-weight: 700;
   font-size: 1.125em;
   line-height: 24px;
+  transition: color 0.5s, font-size 0.5s;
+  cursor: pointer;
+}
+
+#logo:hover {
+  color:greenyellow;
+  font-size: 1.25em;
 }
 
 .headTabs {
@@ -416,7 +427,7 @@ header {
 }
 
 footer {
-  width: 23em;
+  width: 100%;
   padding: 25px 0 5px 0;
   display: flex;
   align-items: center;
@@ -450,12 +461,7 @@ footer {
   }
 
   header {
-    width: 100%;
     padding-left: 7%;
-  }
-
-  main {
-    width: 100%;
   }
 
   #headline {
