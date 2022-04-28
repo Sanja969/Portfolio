@@ -379,7 +379,7 @@ header {
   row-gap: 36px;
 }
 
-#contactForm fieldset{
+#contactForm fieldset {
   display: flex;
   justify-content: center;
   border: none;
@@ -601,7 +601,6 @@ footer {
     column-gap: 44px;
     justify-content: space-between;
     width: 1000px;
-
     align-items: center;
   }
 
@@ -659,4 +658,3 @@ footer {
     display: none;
   }
 }
-
