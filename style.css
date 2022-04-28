@@ -463,6 +463,7 @@ footer {
     width: 100%;
     padding-left: 7%;
   }
+  
   main {
     width: 100%;
   }
@@ -705,4 +706,7 @@ footer {
     display: block;
     margin: auto 0 0 0;
   }
+}
+
+@media (max-width: 280px) {
 }
