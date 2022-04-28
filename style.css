@@ -16,7 +16,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 23.4375em;
+  width: 100%;
 }
 
 .normalTitle {
@@ -44,7 +44,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 23.4375em;
+  width: 100%;
   height: 72px;
   background-color: #3e3c3c;
   box-sizing: border-box;
@@ -426,7 +426,7 @@ header {
 }
 
 footer {
-  width: 23.4375em;
+  width: 100%;
   padding: 25px 0 5px 0;
   display: flex;
   align-items: center;
