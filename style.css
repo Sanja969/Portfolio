@@ -8,10 +8,14 @@
 
 body {
   font: normal 100% Helvetica, 'Inter', sans-serif;
+  width: 100%;
 }
 
 main {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23em;
 }
 
 .normalTitle {
@@ -37,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 23em;
   height: 72px;
   background-color: #3e3c3c;
   box-sizing: border-box;
@@ -69,6 +73,7 @@ header {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 220px;
+  width: 100%;
 }
 
 #title {
@@ -412,6 +417,7 @@ header {
 }
 
 footer {
+  width: 23em;
   padding: 25px 0 5px 0;
   display: flex;
   align-items: center;
@@ -445,13 +451,12 @@ footer {
   }
 
   header {
-    width: 90em;
-    padding-left: 154px;
-    padding-right: 151px;
+    width: 100%;
+    padding-left: 7%;
   }
 
   main {
-    width: 90em;
+    width: 100%;
   }
 
   #headline {
@@ -469,8 +474,8 @@ footer {
     margin: 0 0 12px 0;
     width: 30%;
     padding-right: 12px;
-    font-size: 4.5em;
-    line-height: 82px;
+    font-size: 3.5em;
+    line-height: 62px;
   }
 
   #subtitle {
@@ -486,8 +491,8 @@ footer {
   .socialMedia {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-right: 80px;
+    margin-left: 1%;
+    margin-right: 2%;
   }
 
   .imgSoc1 img {
@@ -496,10 +501,6 @@ footer {
   }
 
   /* work block */
-
-  #work {
-    margin-left: 7%;
-  }
 
   #workTitle-label {
     display: grid;
@@ -515,21 +516,27 @@ footer {
     height: 1px;
     padding: 0;
     margin: 0;
+    font-size: 2.5em;
   }
 
   .empty1 {
     border-top: 1px solid black;
     height: 1px;
-    width: 794px;
+    width: 55em;
     margin-left: 24px;
+  }
+
+  #storyBox {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
   }
 
   #workImage {
     margin-top: 114px;
     margin-bottom: 12px;
-    float: left;
-    width: 684px;
-    height: 448px;
+    width: 70%;
+    height: auto;
     margin-right: 24px;
   }
 
@@ -547,11 +554,13 @@ footer {
     margin-top: 12px;
     font-size: 1.25em;
     line-height: 28px;
-    width: 448px;
+    width: 40%;
+    height: auto;
   }
 
   .storyProjectBtn {
     margin-top: 24px;
+    width: 150px;
   }
 
   .table {
@@ -560,7 +569,7 @@ footer {
     width: 100%;
     row-gap: 24px;
     column-gap: 24px;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
     margin-top: 24px;
   }
@@ -604,7 +613,7 @@ footer {
     grid-template-columns: auto auto auto;
     column-gap: 44px;
     justify-content: space-between;
-    width: 1000px;
+    width: 80%;
     align-items: center;
   }
 
@@ -644,7 +653,7 @@ footer {
   footer {
     flex-direction: row;
     justify-content: center;
-    width: 90em;
+    width: 100%;
     border: none;
   }
 
