@@ -54,6 +54,7 @@ header {
 .headTabs {
   display: none;
 }
+
 /* headline block */
 
 #headline {
@@ -242,7 +243,6 @@ header {
   align-items: left;
   margin-top: 108px;
   margin-left: 0;
-  padding-left: 0;
   height: 1901px;
   border: 1 solid black;
   background-image: url("Icons/aboutMe.png");
@@ -431,7 +431,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   /* header block */
 
   .headTabs {
@@ -445,11 +444,12 @@ footer {
     display: none;
   }
 
-  header{
+  header {
     width: 90em;
     padding-left: 154px;
     padding-right: 151px;
   }
+
   main {
     width: 90em;
   }
@@ -463,16 +463,16 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    }
+  }
 
   #title {
-    margin: 0 0 12px 0px;
+    margin: 0 0 12px 0;
     width: 30%;
     padding-right: 12px;
     font-size: 4.5em;
     line-height: 82px;
   }
-  
+
   #subtitle {
     font-size: 2em;
     line-height: 44px;
@@ -482,7 +482,7 @@ footer {
     width: 40%;
     padding-top: 12px;
   }
-  
+
   .socialMedia {
     display: flex;
     flex-direction: column;
@@ -532,7 +532,7 @@ footer {
     height: 448px;
     margin-right: 24px;
   }
-  
+
   .story-con {
     display: flex;
     flex-direction: column;
@@ -542,14 +542,14 @@ footer {
     height: 36px;
     margin-top: 114px;
   }
-  
+
   #storyParagr {
     margin-top: 12px;
     font-size: 1.25em;
     line-height: 28px;
     width: 448px;
   }
-  
+
   .storyProjectBtn {
     margin-top: 24px;
   }
@@ -583,34 +583,34 @@ footer {
     padding-left: 9.86%;
     box-sizing: border-box;
   }
-  
+
   #aboutMeDesc {
     width: 566px;
     font-size: 1.25em;
     line-height: 32px;
   }
-  
+
   .resumeBtn {
     width: 161px;
     margin-top: 24px;
     padding: 12px;
   }
-  
+
   #skillsBox {
     grid-template-columns: auto auto auto;
     column-gap: 44px;
     justify-content: space-between;
     width: 1000px;
-  
+
     align-items: center;
   }
- 
+
   .skill {
     justify-content: left;
   }
-  
+
   .x {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   #contact-section {
@@ -622,7 +622,7 @@ footer {
   }
 
   /* contact section */
-  
+
   #contact-title {
     margin: 0 24px 73px 24px;
     text-align: left;
@@ -631,32 +631,32 @@ footer {
     line-height: 52px;
     color: #262626;
   }
-  
+
   .submit-contact {
     width: 122px;
     margin-left: -85%;
     margin-top: -20px;
   }
-  
+
   footer {
     flex-direction: row;
     justify-content: center;
     width: 90em;
     border: none;
   }
-  
+
   footer .socialMedia {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
   }
 
   .footerIcon {
     filter: invert(70%);
   }
-  
+
   .footerLine {
     display: none;
   }
 }
+
