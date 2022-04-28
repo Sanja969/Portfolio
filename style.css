@@ -665,6 +665,7 @@ footer {
   .a1 {
     padding-top: 100px;
     background-image: url("Icons/article1.png");
+    box-sizing: border-box;
   }
 
   .a2 {
