@@ -38,7 +38,7 @@
             <h3 id="subtitle">I’m a Software Developer</h3>
             <p id="mainDescription">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.</p>
-            <ul id="socialMedia">
+            <ul class="socialMedia">
                 <li class="imgSoc1"><img src="Icons/Icon-GitHub.png" alt="GitHub Icon" width="18" height="20"></li>
                 <li class="imgSoc1"><img src="Icons/Icon-Linkedin.png" alt="LinkedIn Icon" width="18" height="20"></li>
                 <li class="imgSoc1"><img src="Icons/Icon-Angelist.png" alt="Angelist Icon" width="18" height="20"></li>
@@ -62,7 +62,7 @@
                     <li class="tagS">bootstrap</li>
                     <li class="tagS">Ruby</li>
                 </ul>
-                <button type="button" id="storyProjectBtn">See Project</button>
+                <button type="button" class="storyProjectBtn orangeBtn">See Project</button>
             </article>
             
             <article class="workProject">
@@ -76,7 +76,7 @@
                     <li class="tagP">bootstrap</li>
                     <li class="tagP">Ruby</li>
                 </ul>
-                <button type="button" class="seeProjectBtn">See Project</button>
+                <button type="button" class="seeProjectBtn orangeBtn">See Project</button>
             </article>
 
             <article class="workProject">
@@ -90,7 +90,7 @@
                     <li class="tagP">bootstrap</li>
                     <li class="tagP">Ruby</li>
                 </ul>
-                <button type="button" class="seeProjectBtn">See Project</button>
+                <button type="button" class="seeProjectBtn orangeBtn">See Project</button>
             </article>
 
             <article class="workProject">
@@ -104,7 +104,7 @@
                     <li class="tagP">bootstrap</li>
                     <li class="tagP">Ruby</li>
                 </ul>
-                <button type="button" class="seeProjectBtn">See Project</button>
+                <button type="button" class="seeProjectBtn orangeBtn">See Project</button>
             </article>
 
             <article class="workProject">
@@ -118,7 +118,7 @@
                     <li class="tagP">bootstrap</li>
                     <li class="tagP">Ruby</li>
                 </ul>
-                <button type="button" class="seeProjectBtn">See Project</button>
+                <button type="button" class="seeProjectBtn orangeBtn">See Project</button>
             </article>
             <article class="workProject">
                 <h3 class="proWorkTitle">Profesional Art Printing Data</h3>
@@ -131,7 +131,7 @@
                     <li class="tagP">bootstrap</li>
                     <li class="tagP">Ruby</li>
                 </ul>
-                <button type="button" class="seeProjectBtn">See Project</button>
+                <button type="button" class="seeProjectBtn orangeBtn">See Project</button>
             </article>
 
             <article class="workProject">
@@ -145,7 +145,7 @@
                     <li class="tagP">bootstrap</li>
                     <li class="tagP">Ruby</li>
                 </ul>
-                <button type="button" class="seeProjectBtn">See Project</button>
+                <button type="button" class="seeProjectBtn orangeBtn">See Project</button>
             </article>
 
             
@@ -156,7 +156,7 @@
             <p id="aboutMeDesc">Hello I’m a software developer! I can help you build a product , feature or website 
                 Look through some of my work and experience! If you like what you 
                 see and have a project you need coded, don’t hestiate to contact me.</p>
-            <button type="button" id="resumeBtn">Get My Resume</button>
+            <button type="button" class="resumeBtn orangeBtn">Get My Resume</button>
             <div class="line"></div>
             
             <ul id="skillsBox">
@@ -191,7 +191,36 @@
                     </ul>
                 </li>
             </ul>
-         </section> 
+        </section>
+
+        <section id="contact-section">
+            <h2 id="contact-title">
+                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
+            <form action="/my-handling-form-page" method="post" id="contactForm">
+              
+                <label>
+                    <input type="text" id="name-contact" class="inputContact" name="user_name" placeholder="Full name" maxlength="30" required/>
+                </label>
+                <label>
+                    <input type="email" id="mail-contact" class="inputContact" name="user_email" placeholder="Email address" required/>
+                </label>
+                <label>
+                    <textarea id="msg-contact" class="inputContact" name="user_message" placeholder="Enter text here" maxlength="500" required></textarea>
+                </label>
+                <input type="submit" name="submit" value="Get in touch" class="submit-contact orangeBtn"/>
+            </form>
+        </section>
+        <footer>
+            <ul class="socialMedia">
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-GitHub.png" alt="GitHub Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Linkedin.png" alt="LinkedIn Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Angelist.png" alt="Angelist Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Twitter.png" alt="Twitter Icon" width="18" height="20"></li>
+                <li class="imgSoc1 footerIcon"><img src="Icons/Icon-Medium.png" alt="Medium Icon" width="18" height="20"></li>
+            </ul>
+            <div class="headerLine"></div>
+        </footer>
     </body>
 </html>
 
