@@ -500,6 +500,7 @@ footer {
   #work {
     margin-left: 7%;
   }
+
   #workTitle-label {
     display: grid;
     grid-template-columns: auto auto;
@@ -508,18 +509,21 @@ footer {
     margin-top: 135px;
     justify-content: center;
   }
+
   #workTitle {
     border: none;
     height: 1px;
     padding: 0;
     margin: 0;
   }
+
   .empty1 {
     border-top: 1px solid black;
     height: 1px;
     width: 794px;
     margin-left: 24px;
   }
+
   #workImage {
     margin-top: 114px;
     margin-bottom: 12px;
@@ -528,23 +532,28 @@ footer {
     height: 448px;
     margin-right: 24px;
   }
+  
   .story-con {
     display: flex;
     flex-direction: column;
   }
+
   #storyTitle {
     height: 36px;
     margin-top: 114px;
   }
+  
   #storyParagr {
     margin-top: 12px;
     font-size: 1.25em;
     line-height: 28px;
     width: 448px;
   }
+  
   .storyProjectBtn {
     margin-top: 24px;
   }
+
   .table {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -555,14 +564,17 @@ footer {
     align-items: left;
     margin-top: 24px;
   }
+
   .workProject {
     width: 369px;
     height: 435px;
     margin: 0;
   }
+
   .seeProjectBtn {
     display: none;
   }
+
   #aboutMeBox {
     margin-top: 130px;
     height: 1195px;
@@ -571,16 +583,19 @@ footer {
     padding-left: 9.86%;
     box-sizing: border-box;
   }
+  
   #aboutMeDesc {
     width: 566px;
     font-size: 1.25em;
     line-height: 32px;
   }
+  
   .resumeBtn {
     width: 161px;
     margin-top: 24px;
     padding: 12px;
   }
+  
   #skillsBox {
     grid-template-columns: auto auto auto;
     column-gap: 44px;
@@ -589,12 +604,15 @@ footer {
   
     align-items: center;
   }
+ 
   .skill {
     justify-content: left;
   }
+  
   .x {
     margin-top: 0px;
   }
+
   #contact-section {
     display: flex;
     justify-content: space-around;
@@ -613,25 +631,31 @@ footer {
     line-height: 52px;
     color: #262626;
   }
+  
   .submit-contact {
     width: 122px;
     margin-left: -85%;
     margin-top: -20px;
   }
+  
   footer {
     flex-direction: row;
     justify-content: center;
     width: 90em;
     border: none;
   }
+  
   footer .socialMedia {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  
   }
+
   .footerIcon {
     filter: invert(70%);
   }
+  
   .footerLine {
     display: none;
   }
