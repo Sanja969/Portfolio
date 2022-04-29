@@ -188,10 +188,10 @@ header {
   line-height: 20px;
   float: left;
   margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .storyProjectBtn {
-  margin-top: 12px;
   margin-bottom: 12px;
   width: 37.92%;
 }
@@ -595,7 +595,6 @@ footer {
     max-width: 369px;
     height: 435px;
     margin: 0;
-    
   }
 
   .proWorkTitle {
