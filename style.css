@@ -466,7 +466,12 @@ footer {
     font-size: 1.25em;
   }
 
-  .headTabs a img{
+  .imgSoc1 img {
+    width: 1.65em;
+    height: 1.65em;
+  }
+
+  .headTabs a img {
     transition: filter 0.5s, width 0.5, height 0.5s;
     cursor: pointer;
   }
@@ -525,11 +530,6 @@ footer {
     flex-direction: column;
     margin-left: 1%;
     margin-right: 2%;
-  }
-
-  .imgSoc1 img {
-    width: 1.65em;
-    height: 1.65em;
   }
 
   /* work block */
