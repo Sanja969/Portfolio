@@ -69,6 +69,16 @@ header {
   display: none;
 }
 
+.unionImg {
+  transition: all 0.5s;
+}
+
+.unionImg:hover {
+  filter: brightness(0.2) invert(0.5) sepia(0.8) hue-rotate(100deg) saturate(200%);
+  width: 22px;
+  height: 24px;
+}
+
 /* headline block */
 
 #headline {
@@ -203,6 +213,11 @@ header {
   height: 386px;
   margin-top: 12px;
   margin-bottom: 12px;
+  transition: all 0.5s;
+}
+
+.workProject:hover {
+  box-shadow: 0 0 20px 20px rgba(56, 67, 117, 0.534);
 }
 
 .proWorkTitle {
@@ -472,7 +487,7 @@ footer {
   }
 
   .headTabs a img {
-    transition: filter 0.5s, width 0.5, height 0.5s;
+    filter: brightness(0.2) invert(0.5) sepia(0.8) hue-rotate(100deg) saturate(200%);
     cursor: pointer;
   }
 
@@ -623,11 +638,6 @@ footer {
     max-width: 369px;
     height: 435px;
     margin: 0;
-    transition: all 0.5s;
-  }
-
-  .workProject:hover {
-    box-shadow: 0 0 20px 20px rgba(143, 202, 104, 0.534);
   }
 
   .proWorkTitle {
