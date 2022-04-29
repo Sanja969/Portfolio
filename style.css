@@ -463,7 +463,7 @@ footer {
 
 @media (min-width: 768px) {
   /* header block */
-  
+
   #logo {
     animation-name: colorChange;
     animation-duration: 5s;
@@ -471,7 +471,7 @@ footer {
     animation-iteration-count: infinite;
   }
 
-  @keyframes colorChange{
+  @keyframes colorChange {
     from {
       color: yellow;
     }
@@ -647,7 +647,7 @@ footer {
     animation-iteration-count: infinite;
   }
 
-  @keyframes button{
+  @keyframes button {
     from {
       width: 120px;
       height: 50px;
