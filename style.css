@@ -290,6 +290,23 @@ header {
   letter-spacing: 0.37px;
   margin-top: 120px;
   margin-bottom: 12px;
+  transition: all 2s;
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes #aboutMeTitle {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
+}
+
+#aboutMeTitle:hover {
+  color: green;
+  font-size: 89px;
 }
 
 #aboutMeDesc {
