@@ -244,9 +244,9 @@ header {
 }
 
 .seeProjectBtn {
-  margin-top: 10px;
+  margin-top: 24px;
   margin-bottom: 0;
-  width: inherit;
+  width: 100%;
 }
 
 /* aboutMeblock  */
@@ -456,6 +456,32 @@ footer {
     justify-content: right;
   }
 
+  .headTabs a {
+    transition: color 0.5s, font-size 0.5s;
+    cursor: pointer;
+  }
+
+  .headTabs a:hover {
+    color: greenyellow;
+    font-size: 1.25em;
+  }
+
+  .imgSoc1 img {
+    width: 1.65em;
+    height: 1.65em;
+  }
+
+  .headTabs a img {
+    transition: filter 0.5s, width 0.5, height 0.5s;
+    cursor: pointer;
+  }
+
+  .headTabs a img:hover {
+    filter: brightness(0.2) invert(0.7) sepia(0.5) hue-rotate(100deg) saturate(200%);
+    width: 22px;
+    height: 24px;
+  }
+
   .unionImg {
     display: none;
   }
@@ -506,11 +532,6 @@ footer {
     margin-right: 2%;
   }
 
-  .imgSoc1 img {
-    width: 1.65em;
-    height: 1.65em;
-  }
-
   /* work block */
 
   #work {
@@ -551,9 +572,16 @@ footer {
     margin-top: 114px;
     margin-bottom: 12px;
     max-width: 684px;
-    height: 448px;
+    max-height: 448px;
     margin-right: 24px;
     width: 50vw;
+    height: 60vw;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  #workImage:hover {
+    width: 700px;
+    height: 500px;
   }
 
   .story-con {
@@ -595,6 +623,11 @@ footer {
     max-width: 369px;
     height: 435px;
     margin: 0;
+    transition: all 0.5s;
+  }
+
+  .workProject:hover {
+    box-shadow: 0 0 20px 20px rgba(143, 202, 104, 0.534);
   }
 
   .proWorkTitle {
