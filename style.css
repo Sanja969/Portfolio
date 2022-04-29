@@ -69,6 +69,16 @@ header {
   display: none;
 }
 
+.unionImg {
+  transition: all 0.5s;
+}
+
+.unionImg:hover {
+  filter: brightness(0.2) invert(0.5) sepia(0.8) hue-rotate(100deg) saturate(200%);
+  width: 22px;
+  height: 24px;
+}
+
 /* headline block */
 
 #headline {
@@ -203,6 +213,11 @@ header {
   height: 386px;
   margin-top: 12px;
   margin-bottom: 12px;
+  transition: all 0.5s;
+}
+
+.workProject:hover {
+  box-shadow: 0 0 20px 20px rgba(56, 67, 117, 0.534);
 }
 
 .proWorkTitle {
@@ -449,6 +464,23 @@ footer {
 @media (min-width: 768px) {
   /* header block */
 
+  #logo {
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes colorChange {
+    from {
+      color: yellow;
+    }
+
+    to {
+      color: blue;
+    }
+  }
+
   .headTabs {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -472,7 +504,7 @@ footer {
   }
 
   .headTabs a img {
-    transition: filter 0.5s, width 0.5, height 0.5s;
+    filter: brightness(0.2) invert(0.5) sepia(0.8) hue-rotate(100deg) saturate(200%);
     cursor: pointer;
   }
 
@@ -513,6 +545,10 @@ footer {
     padding-right: 12px;
     font-size: 3.5em;
     line-height: 62px;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
   #subtitle {
@@ -605,6 +641,23 @@ footer {
   .storyProjectBtn {
     margin-top: 24px;
     width: 150px;
+    animation-name: button;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes button {
+    from {
+      width: 120px;
+      height: 50px;
+    }
+
+    to {
+      background-color: blue;
+      width: 150px;
+      height: 70px;
+    }
   }
 
   .table {
@@ -623,11 +676,6 @@ footer {
     max-width: 369px;
     height: 435px;
     margin: 0;
-    transition: all 0.5s;
-  }
-
-  .workProject:hover {
-    box-shadow: 0 0 20px 20px rgba(143, 202, 104, 0.534);
   }
 
   .proWorkTitle {
