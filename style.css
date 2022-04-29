@@ -459,23 +459,23 @@ footer {
   .headTabs a {
     transition: color 0.5s, font-size 0.5s;
     cursor: pointer;
-}
+  }
 
-.headTabs a:hover {
-  color: greenyellow;
-  font-size: 1.25em;
-}
+  .headTabs a:hover {
+    color: greenyellow;
+    font-size: 1.25em;
+  }
 
-.headTabs a {
-  transition: filter 0.5s, width 0.5, height 0.5s;
-    cursor: pointer;
-}
+  .headTabs a {
+    transition: filter 0.5s, width 0.5, height 0.5s;
+      cursor: pointer;
+  }
 
-.headTabs a img:hover {
-  filter: brightness(0.2) invert(.7) sepia(.5) hue-rotate(100deg) saturate(200%);
-  width: 22px;
-  height: 24px;
-}
+  .headTabs a img:hover {
+    filter: brightness(0.2) invert(.7) sepia(.5) hue-rotate(100deg) saturate(200%);
+    width: 22px;
+    height: 24px;
+  }
 
   .unionImg {
     display: none;
