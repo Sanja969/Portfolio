@@ -35,12 +35,22 @@ main {
   line-height: 24px;
   border: none;
   color: rgb(8, 8, 8);
+  border: 2px solid rgb(7, 7, 7);
 }
 
-.orangeBtn:focus {
-  outline: none !important;
-  border: 2px solid rgb(165, 82, 67);
-  box-shadow: 0 0 5px 5px rgb(165, 82, 67);
+.orangeBtn:hover {
+  background: #247749;
+  
+}
+
+.orangeBtn:active {
+  background: #00a149;;
+}
+
+.orangeBtn:disabled {
+  background: inherit;
+  color: #5b5957;
+  border: none;
 }
 
 /* header block */
@@ -218,7 +228,7 @@ header {
   border: 1px solid rgb(190, 125, 26);
   box-shadow: 0 0 5px 5px rgb(255, 76, 5);
   background-color: rgb(255, 76, 5);
-  color:white;
+  color: white;
 }
 
 .storyProjectBtn {
@@ -332,6 +342,9 @@ header {
   margin-top: 36px;
   margin-bottom: 209px;
   width: 42.933%;
+  border: 2px solid rgb(253, 252, 252);
+  background-color: red;
+  color: white;
 }
 
 .line {
@@ -392,24 +405,6 @@ header {
 
 .x {
   margin-top: -56px;
-}
-
-.orangeBtn:hover {
-  background: #fff5e1;
-  color: #a54404;
-  border: 1px solid #f55800;
-}
-
-.orangeBtn:active {
-  background: #e05304;
-  color: #fff;
-  border: 1px solid #f55800;
-}
-
-.orangeBtn:disabled {
-  background: inherit;
-  color: #5b5957;
-  border: none;
 }
 
 /* contact section */
