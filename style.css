@@ -235,7 +235,7 @@ header {
   outline: none !important;
   border: 2px solid rgb(16, 17, 16);
   box-shadow: 0 0 2px 2px rgb(14, 13, 13);
-  background-color: rgb(37, 161, 43);
+  background-color: rgb(13, 59, 15);
   color: white;
 }
 
@@ -351,6 +351,12 @@ header {
   margin-bottom: 209px;
   width: 42.933%;
   border: 2px solid rgb(218, 228, 210);
+}
+
+.resumeBtn:focus {
+  outline: none !important;
+  border: 2px solid rgb(229, 229, 238);
+  box-shadow: 0 0 2px 2px rgb(240, 235, 235);
 }
 
 .line {
