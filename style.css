@@ -36,6 +36,12 @@ main {
   border: none;
 }
 
+.orangeBtn:focus {
+  outline: none !important;
+  border: 2px solid rgb(165, 82, 67);
+  box-shadow: 0 0 5px 5px rgb(165, 82, 67);
+}
+
 /* header block */
 
 header {
@@ -58,6 +64,7 @@ header {
   line-height: 24px;
   transition: color 0.5s, font-size 0.5s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #logo:hover {
@@ -199,6 +206,14 @@ header {
   float: left;
   margin-right: 12px;
   margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.tagS:focus {
+  outline: none !important;
+  border: 1px solid rgb(190, 125, 26);;
+  box-shadow: 0 0 5px 5px rgba(20, 19, 18, 0.329);
+  background-color: rgb(190, 103, 32);
 }
 
 .storyProjectBtn {
@@ -249,17 +264,25 @@ header {
 
 .tagP {
   text-align: center;
-  padding: 10px 3.6%;
+  padding: 10px 10px;
   background-color: rgba(255, 255, 255, 0.24);
   box-sizing: border-box;
   height: 40px;
   font-weight: 500;
   font-size: 0.9375em;
   line-height: 20px;
+  text-decoration: none;
+}
+
+.tagP:focus {
+  outline: none !important;
+  border: 1px solid #405715;
+  box-shadow: 0 0 5px 5px rgba(132, 199, 118, 0.329);
+  background-color: rgb(24, 95, 42);
 }
 
 .seeProjectBtn {
-  margin-top: 24px;
+  margin-top: auto;
   margin-bottom: 0;
   width: 100%;
 }
@@ -491,6 +514,7 @@ footer {
   .headTabs a {
     transition: color 0.5s, font-size 0.5s;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .headTabs a:hover {
@@ -501,6 +525,7 @@ footer {
   .imgSoc1 img {
     width: 1.65em;
     height: 1.65em;
+    margin-top: 12px;
   }
 
   .headTabs a img {
