@@ -29,20 +29,24 @@ main {
 
 .orangeBtn {
   height: 48px;
-  background: #4ec785;
+  background: #c41d00;
   font-weight: 800;
   font-size: 1.0625em;
   line-height: 24px;
-  color: rgb(8, 8, 8);
-  border: 2px solid rgb(7, 7, 7);
+  color: rgb(229, 225, 243);
+  border: 1px solid black;
 }
 
 .orangeBtn:hover {
-  background: #bbf0de;
+  background: #fff5e1;
+  color: #180e09;
+  border: 1px solid #f55800;
 }
 
 .orangeBtn:active {
-  background: #7aebac;
+  background: #e05304;
+  color: #fff;
+  border: 1px solid #f55800;
 }
 
 .orangeBtn:disabled {
