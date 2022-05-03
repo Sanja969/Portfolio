@@ -29,12 +29,12 @@ main {
 
 .orangeBtn {
   height: 48px;
-  background: #ff5100;
+  background: #993800;
   font-weight: 700;
   font-size: 1.0625em;
   line-height: 24px;
   border: none;
-  color: rgb(255, 255, 247);
+  color: rgb(206, 206, 206);
 }
 
 .orangeBtn:focus {
