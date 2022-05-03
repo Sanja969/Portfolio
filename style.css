@@ -29,11 +29,12 @@ main {
 
 .orangeBtn {
   height: 48px;
-  background: #ff6b00;
+  background: #ff5100;
   font-weight: 700;
   font-size: 1.0625em;
   line-height: 24px;
   border: none;
+  color: rgb(255, 255, 247);
 }
 
 .orangeBtn:focus {
@@ -188,10 +189,15 @@ header {
 }
 
 #storyTags {
-  margin-top: 12px;
-  margin-bottom: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
   list-style: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 8px 12px;
+  width: 320px;
+  height: auto;
 }
 
 .tagS {
@@ -202,17 +208,17 @@ header {
   font-weight: 500;
   font-size: 0.9375em;
   line-height: 20px;
-  float: left;
-  margin-right: 12px;
   margin-bottom: 12px;
   text-decoration: none;
+  padding: 12px;
 }
 
 .tagS:focus {
   outline: none !important;
   border: 1px solid rgb(190, 125, 26);
-  box-shadow: 0 0 5px 5px rgba(20, 19, 18, 0.329);
-  background-color: rgb(190, 103, 32);
+  box-shadow: 0 0 5px 5px rgb(255, 76, 5);
+  background-color: rgb(255, 76, 5);
+  color:white;
 }
 
 .storyProjectBtn {
@@ -390,7 +396,7 @@ header {
 
 .orangeBtn:hover {
   background: #fff5e1;
-  color: #f55800;
+  color: #a54404;
   border: 1px solid #f55800;
 }
 
@@ -678,7 +684,6 @@ footer {
     }
 
     to {
-      background-color: blue;
       width: 150px;
       height: 70px;
     }
