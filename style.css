@@ -33,24 +33,28 @@ main {
   font-weight: 800;
   font-size: 1.0625em;
   line-height: 24px;
-  border: none;
   color: rgb(8, 8, 8);
   border: 2px solid rgb(7, 7, 7);
 }
 
 .orangeBtn:hover {
-  background: #247749;
-  
+  background: #bbf0de;
 }
 
 .orangeBtn:active {
-  background: #00a149;;
+  background: #7aebac;
 }
 
 .orangeBtn:disabled {
   background: inherit;
   color: #5b5957;
   border: none;
+}
+
+.orangeBtn:focus {
+  outline: none !important;
+  border: 2px solid rgb(16, 16, 17);
+  box-shadow: 0 0 2px 2px rgb(3, 3, 3);
 }
 
 /* header block */
@@ -212,7 +216,7 @@ header {
 
 .tagS {
   color: #091e42;
-  border: 1px solid #8993a4;
+  border: 2px solid #080808;
   box-sizing: border-box;
   height: 40px;
   font-weight: 500;
@@ -225,9 +229,9 @@ header {
 
 .tagS:focus {
   outline: none !important;
-  border: 1px solid rgb(190, 125, 26);
-  box-shadow: 0 0 5px 5px rgb(255, 76, 5);
-  background-color: rgb(255, 76, 5);
+  border: 2px solid rgb(16, 17, 16);
+  box-shadow: 0 0 2px 2px rgb(14, 13, 13);
+  background-color: rgb(37, 161, 43);
   color: white;
 }
 
@@ -342,9 +346,7 @@ header {
   margin-top: 36px;
   margin-bottom: 209px;
   width: 42.933%;
-  border: 2px solid rgb(253, 252, 252);
-  background-color: red;
-  color: white;
+  border: 2px solid rgb(218, 228, 210);
 }
 
 .line {
