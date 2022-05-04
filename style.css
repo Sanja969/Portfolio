@@ -29,11 +29,36 @@ main {
 
 .orangeBtn {
   height: 48px;
-  background: #ff6b00;
-  font-weight: 700;
+  background: #c41d00;
+  font-weight: 800;
   font-size: 1.0625em;
   line-height: 24px;
+  color: rgb(229, 225, 243);
+  border: 1px solid black;
+}
+
+.orangeBtn:hover {
+  background: #fff5e1;
+  color: #180e09;
+  border: 1px solid #f55800;
+}
+
+.orangeBtn:active {
+  background: #e05304;
+  color: #fff;
+  border: 1px solid #f55800;
+}
+
+.orangeBtn:disabled {
+  background: inherit;
+  color: #5b5957;
   border: none;
+}
+
+.orangeBtn:focus {
+  outline: none !important;
+  border: 2px solid rgb(16, 16, 17);
+  box-shadow: 0 0 2px 2px rgb(3, 3, 3);
 }
 
 /* header block */
@@ -58,6 +83,7 @@ header {
   line-height: 24px;
   transition: color 0.5s, font-size 0.5s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #logo:hover {
@@ -181,24 +207,36 @@ header {
 }
 
 #storyTags {
-  margin-top: 12px;
-  margin-bottom: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
   list-style: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 8px 12px;
+  width: 320px;
+  height: auto;
 }
 
 .tagS {
   color: #091e42;
-  padding: 10px 3.2%;
-  border: 1px solid #8993a4;
+  border: 2px solid #080808;
   box-sizing: border-box;
   height: 40px;
   font-weight: 500;
   font-size: 0.9375em;
   line-height: 20px;
-  float: left;
-  margin-right: 12px;
   margin-bottom: 12px;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.tagS:focus {
+  outline: none !important;
+  border: 2px solid rgb(16, 17, 16);
+  box-shadow: 0 0 2px 2px rgb(14, 13, 13);
+  background-color: rgb(13, 59, 15);
+  color: white;
 }
 
 .storyProjectBtn {
@@ -249,17 +287,25 @@ header {
 
 .tagP {
   text-align: center;
-  padding: 10px 3.6%;
+  padding: 10px 10px;
   background-color: rgba(255, 255, 255, 0.24);
   box-sizing: border-box;
   height: 40px;
   font-weight: 500;
   font-size: 0.9375em;
   line-height: 20px;
+  text-decoration: none;
+}
+
+.tagP:focus {
+  outline: none !important;
+  border: 1px solid #405715;
+  box-shadow: 0 0 5px 5px rgba(132, 199, 118, 0.329);
+  background-color: rgb(24, 95, 42);
 }
 
 .seeProjectBtn {
-  margin-top: 24px;
+  margin-top: auto;
   margin-bottom: 0;
   width: 100%;
 }
@@ -304,6 +350,13 @@ header {
   margin-top: 36px;
   margin-bottom: 209px;
   width: 42.933%;
+  border: 2px solid rgb(218, 228, 210);
+}
+
+.resumeBtn:focus {
+  outline: none !important;
+  border: 2px solid rgb(229, 229, 238);
+  box-shadow: 0 0 2px 2px rgb(240, 235, 235);
 }
 
 .line {
@@ -364,24 +417,6 @@ header {
 
 .x {
   margin-top: -56px;
-}
-
-.orangeBtn:hover {
-  background: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
-}
-
-.orangeBtn:active {
-  background: #e05304;
-  color: #fff;
-  border: 1px solid #f55800;
-}
-
-.orangeBtn:disabled {
-  background: inherit;
-  color: #5b5957;
-  border: none;
 }
 
 /* contact section */
@@ -491,6 +526,7 @@ footer {
   .headTabs a {
     transition: color 0.5s, font-size 0.5s;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .headTabs a:hover {
@@ -501,6 +537,7 @@ footer {
   .imgSoc1 img {
     width: 1.65em;
     height: 1.65em;
+    margin-top: 12px;
   }
 
   .headTabs a img {
@@ -654,7 +691,6 @@ footer {
     }
 
     to {
-      background-color: blue;
       width: 150px;
       height: 70px;
     }
