@@ -50,16 +50,16 @@ const navLi = document.querySelectorAll('.sec');
 
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const secTop = section.offsetTop;
     const secHigh = section.clientHeight;
     if (window.pageYOffset >= (secTop - secHigh)) {
       current = section.getAttribute('id');
     }
   });
-  navLi.forEach(a => {
+  navLi.forEach((a) => {
     a.classList.remove('active');
-    if (a.classList.contains(current)){
+    if (a.classList.contains(current)) {
       a.classList.add('active');
     }
   });
