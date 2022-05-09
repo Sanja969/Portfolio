@@ -1,12 +1,15 @@
 const mobileMenu = document.createElement('div');
+
 function hideMobileMenu() {
   mobileMenu.style.display = 'none';
 }
+
 function showMobileMenu() {
   mobileMenu.style.display = 'block';
 }
+
 mobileMenu.className = 'mobile-menu';
-mobileMenu.innerHTML = '<img></p><ul class="menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
+mobileMenu.innerHTML = '<img><ul class="menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
 document.body.appendChild(mobileMenu);
 mobileMenu.style.display = 'none';
 mobileMenu.style.paddingTop = '34px';
@@ -24,6 +27,7 @@ mobileMenu.children[1].style.display = 'flex';
 mobileMenu.children[1].style.flexDirection = 'column';
 mobileMenu.children[1].style.alignItems = 'center';
 mobileMenu.children[1].style.padding = '0';
+
 const li = document.querySelectorAll('ul.menu > li');
 for (let i = 0; i < li.length; i += 1) {
   li[i].className = 'li[i]';
@@ -38,11 +42,13 @@ for (let i = 0; i < li.length; i += 1) {
   li[i].style.width = '80%';
   li[i].addEventListener('click', hideMobileMenu);
 }
+
 li[0].firstChild.setAttribute('href', '#work');
 li[1].firstChild.setAttribute('href', '#aboutMeBox');
 li[2].firstChild.setAttribute('href', '#contact-section');
-const hamb = document.querySelector('.unionImg');
-hamb.addEventListener('click', showMobileMenu);
+
+const hamburger = document.querySelector('.unionImg');
+hamburger.addEventListener('click', showMobileMenu);
 mobileMenu.children[0].addEventListener('click', hideMobileMenu);
 
 const sections = document.querySelectorAll('section');
@@ -57,6 +63,7 @@ window.addEventListener('scroll', () => {
       current = section.getAttribute('id');
     }
   });
+  
   navLi.forEach((a) => {
     a.classList.remove('active');
     if (a.classList.contains(current)) {
