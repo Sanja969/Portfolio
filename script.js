@@ -1,12 +1,10 @@
-
-
 const mobileMenu = document.createElement('div');
 function hideMobileMenu() {
-    mobileMenu.style.display = 'none';
-  }
-  function showMobileMenu() {
-    mobileMenu.style.display = 'block';
-  }
+  mobileMenu.style.display = 'none';
+}
+function showMobileMenu() {
+  mobileMenu.style.display = 'block';
+}
 mobileMenu.className = 'mobile-menu';
 mobileMenu.innerHTML = '<img></p><ul class="menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
 document.body.appendChild(mobileMenu);
@@ -45,5 +43,4 @@ li[1].firstChild.setAttribute('href', '#aboutMeBox');
 li[2].firstChild.setAttribute('href', '#contact-section');
 const hamb = document.querySelector('.unionImg');
 hamb.addEventListener('click', showMobileMenu);
-
 mobileMenu.children[0].addEventListener('click', hideMobileMenu);

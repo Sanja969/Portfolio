@@ -6,16 +6,24 @@
   font-weight: 400;
 }
 
+html, body {    
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+}
+
 body {
-  font: normal 100% Helvetica, 'Inter', sans-serif;
-  width: 100%;
+  font: 'Inter', sans-serif;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(4,auto);
+  margin: 0;
   width: 100%;
+  align-items: center;
 }
 
 .normalTitle {
@@ -65,6 +73,7 @@ main {
 header {
   left: 0;
   top: 0;
+  right: 0;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -108,7 +117,7 @@ header {
 /* headline block */
 
 #headline {
-  margin-top: 60px;
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +182,8 @@ header {
   grid-template-rows: repeat(8, auto);
   align-items: center;
   justify-content: center;
-  width: 87.2%;
+  width: 86%;
+  margin-left: 7%;
 }
 
 #workTitle {
@@ -607,8 +617,7 @@ footer {
   /* work block */
 
   #work {
-    width: 70%;
-    align-items: center;
+  
   }
 
   #workTitle-label {
