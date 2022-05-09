@@ -6,7 +6,8 @@
   font-weight: 400;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -71,7 +72,7 @@ header {
   left: 0;
   top: 0;
   right: 0;
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +115,6 @@ header {
 /* headline block */
 
 #headline {
-  margin-top: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
