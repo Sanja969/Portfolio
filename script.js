@@ -1,4 +1,4 @@
-const mobileMenu  =  document.createElement('div');
+const mobileMenu = document.createElement('div');
 mobileMenu.className = 'mobile-menu';
 mobileMenu.innerHTML = '<img></p><ul class = "menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
 document.body.appendChild(mobileMenu);
@@ -14,9 +14,9 @@ mobileMenu.children[1].style.padding = '0';
 for (const taps of document.querySelectorAll('ul.menu > li')) {
   taps.className = 'taps';
   taps.style.listStyle = 'none';
-  taps.firstChild.style.fontSize = '32px';
-  taps.firstChild.style.fontWeight = '700';
-  taps.firstChild.style.color = '#fff5e1';
+//   taps.firstChild.style.fontSize = '32px';
+//   taps.firstChild.style.fontWeight = '700';
+//   taps.firstChild.style.color = '#fff5e1';
   taps.style.padding = '15px';
   taps.style.marginTop = '9px';
   taps.style.borderBottom = '1px solid white';
