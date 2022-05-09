@@ -49,18 +49,18 @@ const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.sec');
 
 window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const secTop = section.offsetTop;
-        const secHigh = section.clientHeight;
-        if (pageYOffset >= (secTop - secHigh)) {
-            current = section.getAttribute('id');
-        }
-    })
-    navLi.forEach(a => {
-        a.classList.remove('active');
-        if(a.classList.contains(current)){
-            a.classList.add('active');
-        }
-    })
-})
+  let current = '';
+  sections.forEach(section => {
+    const secTop = section.offsetTop;
+    const secHigh = section.clientHeight;
+    if (window.pageYOffset >= (secTop - secHigh)) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLi.forEach(a => {
+    a.classList.remove('active');
+    if (a.classList.contains(current)){
+      a.classList.add('active');
+    }
+  });
+});
