@@ -25,16 +25,24 @@ for (let i = 0; i < li.length; i += 1) {
   li[i].firstChild.style.fontSize = '32px';
   li[i].firstChild.style.fontWeight = '700';
   li[i].firstChild.style.color = '#fff5e1';
+  li[i].firstChild.style.textDecoration = 'none';
   li[i].style.padding = '15px';
   li[i].style.marginTop = '9px';
   li[i].style.borderBottom = '1px solid white';
   li[i].style.width = '80%';
+  li[i].addEventListener('click',hideMobileMenu)
 }
+li[0].firstChild.setAttribute("href", "#work");
+li[1].firstChild.setAttribute("href", "#aboutMeBox");
+li[2].firstChild.setAttribute("href", "#contact-section");
 const hamb = document.querySelector('.unionImg');
-hamb.addEventListener('click',function() {
-  mobileMenu.style.display='block';
-});
+hamb.addEventListener('click',showMobileMenu);
 
-mobileMenu.children[0].addEventListener('click',function() {
-    mobileMenu.style.display='none';
-  })
+mobileMenu.children[0].addEventListener('click',hideMobileMenu)
+
+function hideMobileMenu() {
+  mobileMenu.style.display = 'none';
+}
+function showMobileMenu() {
+    mobileMenu.style.display = 'block';
+  }
