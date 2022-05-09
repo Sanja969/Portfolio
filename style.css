@@ -535,6 +535,12 @@ footer {
     text-decoration: none;
   }
 
+  .headTabs .active {
+    transition: all 0.3s;
+    color: greenyellow;
+    border-bottom: 1px solid red;
+  }
+
   .headTabs a:hover {
     color: greenyellow;
     font-size: 1.25em;
