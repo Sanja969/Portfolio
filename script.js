@@ -11,16 +11,17 @@ mobileMenu.children[1].style.display = 'flex';
 mobileMenu.children[1].style.flexDirection = 'column';
 mobileMenu.children[1].style.alignItems = 'center';
 mobileMenu.children[1].style.padding = '0';
-for (const taps of document.querySelectorAll('ul.menu > li')) {
-  taps.className = 'taps';
-  taps.style.listStyle = 'none';
-//   taps.firstChild.style.fontSize = '32px';
-//   taps.firstChild.style.fontWeight = '700';
-//   taps.firstChild.style.color = '#fff5e1';
-  taps.style.padding = '15px';
-  taps.style.marginTop = '9px';
-  taps.style.borderBottom = '1px solid white';
-  taps.style.width = '80%';
+let li = document.querySelectorAll('ul.menu > li')
+for (let i; i < li.length; i++) {
+  li[i].className = 'li[i]';
+  li[i].style.listStyle = 'none';
+  li[i].firstChild.style.fontSize = '32px';
+  li[i].firstChild.style.fontWeight = '700';
+  li[i].firstChild.style.color = '#fff5e1';
+  li[i].style.padding = '15px';
+  li[i].style.marginTop = '9px';
+  li[i].style.borderBottom = '1px solid white';
+  li[i].style.width = '80%';
 }
 mobileMenu.style.backgroundColor = '#3c3a39';
 mobileMenu.style.height = '755px';
