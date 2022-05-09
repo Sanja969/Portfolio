@@ -12,7 +12,7 @@ mobileMenu.children[1].style.flexDirection = 'column';
 mobileMenu.children[1].style.alignItems = 'center';
 mobileMenu.children[1].style.padding = '0';
 const li = document.querySelectorAll('ul.menu > li');
-for (let i=0; i < li.length; i+=1) {
+for (let i=0; i < li.length; i += 1) {
   li[i].className = 'li[i]';
   li[i].style.listStyle = 'none';
   li[i].firstChild.style.fontSize = '32px';
