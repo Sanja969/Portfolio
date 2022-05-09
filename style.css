@@ -504,6 +504,13 @@ footer {
 
 @media (min-width: 768px) {
   /* header block */
+  html {
+    overflow-x: visible;
+  }
+
+  header {
+    position: fixed;
+  }
 
   #logo {
     animation-name: colorChange;
