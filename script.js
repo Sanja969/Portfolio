@@ -2,8 +2,15 @@ const mobileMenu = document.createElement('div');
 mobileMenu.className = 'mobile-menu';
 mobileMenu.innerHTML = '<img></p><ul class = "menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
 document.body.appendChild(mobileMenu);
-mobileMenu.style.paddingTop = '33px';
+mobileMenu.style.display='none';
+mobileMenu.style.paddingTop = '34px';
 mobileMenu.style.boxSizing = 'border-box';
+mobileMenu.style.position = 'absolute';
+mobileMenu.style.top = '0px';
+mobileMenu.style.left = '-8px';
+mobileMenu.style.backgroundColor = '#3c3a39';
+mobileMenu.style.height = '755px';
+mobileMenu.style.width = '102%';
 mobileMenu.children[0].src = 'Icons/cencel.png';
 mobileMenu.children[0].style.float = 'right';
 mobileMenu.children[0].style.marginRight = '38px';
@@ -23,5 +30,11 @@ for (let i = 0; i < li.length; i += 1) {
   li[i].style.borderBottom = '1px solid white';
   li[i].style.width = '80%';
 }
-mobileMenu.style.backgroundColor = '#3c3a39';
-mobileMenu.style.height = '755px';
+const hamb = document.querySelector('.unionImg');
+hamb.addEventListener('click',function() {
+  mobileMenu.style.display='block';
+});
+
+mobileMenu.children[0].addEventListener('click',function() {
+    mobileMenu.style.display='none';
+  })
