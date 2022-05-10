@@ -34,7 +34,7 @@ main {
 
 .orangeBtn {
   height: 48px;
-  background: #ff6b00;;
+  background: #ff6b00;
   font-weight: 800;
   font-size: 1.0625em;
   line-height: 24px;
@@ -516,7 +516,6 @@ footer {
 .popup {
   display: flex;
   flex-direction: column;
-  align-items: left;
   background: #fff;
   padding: 16px;
   z-index: 3;
@@ -536,7 +535,7 @@ footer {
   color: #172b4d;
 }
 
-.popup > h3 > img{
+.popup > h3 > img {
   margin: 0 0 10px 10px;
 }
 
@@ -573,7 +572,7 @@ footer {
   padding: 10px;
 }
 
-.popup > div > button >img {
+.popup > div > button > img {
   margin-left: 5px;
 }
 
@@ -632,17 +631,6 @@ footer {
     width: 1.65em;
     height: 1.65em;
     margin-top: 12px;
-  }
-
-  .headTabs a img {
-    filter: brightness(0.2) invert(0.5) sepia(0.8) hue-rotate(100deg) saturate(200%);
-    cursor: pointer;
-  }
-
-  .headTabs a img:hover {
-    filter: brightness(0.2) invert(0.7) sepia(0.5) hue-rotate(100deg) saturate(200%);
-    width: 22px;
-    height: 24px;
   }
 
   .unionImg {
@@ -897,10 +885,6 @@ footer {
     margin-bottom: 0;
   }
 
-  .popup > h3 > img {
-    padding-right: 20px;
-  }
-
   .popup > img {
     float: left;
     margin: 20px 12px 0 0;
@@ -910,18 +894,32 @@ footer {
     height: auto;
   }
 
+  .popup > h3 > img {
+    padding-right: 20px;
+  }
+
   .popup > p {
     padding-top: 20px;
     padding-bottom: 10%;
   }
-  
+
   .popup > div {
     justify-content: left;
     align-items: center;
+  }
+
+  .headTabs a img {
+    filter: brightness(0.2) invert(0.5) sepia(0.8) hue-rotate(100deg) saturate(200%);
+    cursor: pointer;
+  }
+
+  .headTabs a img:hover {
+    filter: brightness(0.2) invert(0.7) sepia(0.5) hue-rotate(100deg) saturate(200%);
+    width: 22px;
+    height: 24px;
   }
 }
 
 .workProjectHide {
   display: none;
 }
-
