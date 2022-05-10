@@ -520,7 +520,6 @@ footer {
   padding: 16px;
   z-index: 3;
   width: 343px;
-  height: 718px;
   box-sizing: border-box;
 }
 
@@ -881,7 +880,6 @@ footer {
   .popup {
     width: 90%;
     max-width: 1156px;
-    height: 631px;
     display: block;
   }
 
