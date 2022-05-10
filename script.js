@@ -182,4 +182,4 @@ const seeProjectsBtn = document.querySelector('.storyProjectBtn');
 
 seeProjectsBtn.addEventListener('click', () => {
   window.location = '#table';
-})
+});
