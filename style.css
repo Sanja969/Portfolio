@@ -34,12 +34,12 @@ main {
 
 .orangeBtn {
   height: 48px;
-  background: #c41d00;
+  background: #ff6b00;;
   font-weight: 800;
   font-size: 1.0625em;
   line-height: 24px;
   color: rgb(229, 225, 243);
-  border: 1px solid black;
+  border: none;
 }
 
 .orangeBtn:hover {
@@ -260,6 +260,7 @@ header {
   margin-top: 12px;
   margin-bottom: 12px;
   transition: all 0.5s;
+  border: 1px solid #7e7977;
 }
 
 .workProject:hover {
@@ -272,6 +273,8 @@ header {
   margin-bottom: 0;
   margin-top: 84px;
   margin-left: 4.9%;
+  color: rgb(255, 237, 78);
+  font-weight: 700;
 }
 
 .proWorkDesc {
@@ -502,6 +505,78 @@ footer {
   width: 134px;
 }
 
+.popupCon {
+  top: 50px;
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  display: none;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background: #fff;
+  padding: 16px;
+  z-index: 3;
+  width: 343px;
+  height: 718px;
+  box-sizing: border-box;
+}
+
+.popup > * {
+  color: #344563;
+  list-style: none;
+}
+
+.popup > h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.popup > h3 > img{
+  margin: 0 0 10px 10px;
+}
+
+.popup > ul {
+  display: flex;
+  justify-content: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.popup > ul > li {
+  color: #3c3a39;
+  padding: 8px 12px;
+  border: 1px solid #3c3a39;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.popup > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 19px;
+}
+
+.popup > div > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.popup > div > button >img {
+  margin-left: 5px;
+}
+
 @media (min-width: 768px) {
   /* header block */
   html {
@@ -725,10 +800,6 @@ footer {
     margin-top: 178px;
   }
 
-  .seeProjectBtn {
-    display: none;
-  }
-
   #aboutMeBox {
     margin-top: 130px;
     height: 1195px;
@@ -812,30 +883,58 @@ footer {
     display: none;
   }
 
-  .a1 {
-    padding-top: 100px;
-    background-image: url("Icons/article1.png");
-    box-sizing: border-box;
-  }
-
-  .a2 {
-    background-image: url("Icons/article2.png");
-  }
-
-  .a3 {
-    background-image: url("Icons/article3.png");
-  }
-
-  .a4 {
-    background-image: url("Icons/article4.png");
-  }
-
-  .a1 > * {
-    display: none;
-  }
-
-  .a1 button {
+  .popup {
+    width: 90%;
+    max-width: 1156px;
+    height: 631px;
     display: block;
-    margin: auto 0 0 0;
+  }
+
+  .popup > h3 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .popup > h3 > img {
+    padding-right: 20px;
+  }
+
+  .popup > img {
+    float: left;
+    margin: 20px 12px 0 0;
+    max-width: 659px;
+    width: 60%;
+    max-height: 448px;
+    height: auto;
+  }
+
+  .popup > p {
+    padding-top: 20px;
+    padding-bottom: 10%;
+  }
+  
+  .popup > div {
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .popup > div > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px;
+  }
+  
+  .popup > div > button >img {
+    margin-left: 5px;
   }
 }
+
+.workProjectHide {
+  display: none;
+}
+

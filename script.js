@@ -1,6 +1,8 @@
 const containerMobiMenu = document.createElement('div');
+const popup = document.querySelector('.popupCon');
 const mobileMenu = document.createElement('div');
 const line = document.createElement('div');
+
 function hideMobileMenu() {
   containerMobiMenu.style.display = 'none';
 }
@@ -8,6 +10,8 @@ function hideMobileMenu() {
 function showMobileMenu() {
   containerMobiMenu.style.display = 'block';
 }
+
+
 
 mobileMenu.className = 'mobile-menu';
 mobileMenu.innerHTML = '<img><ul class="menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
@@ -87,3 +91,101 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+const projects = [
+  project1 = {
+    name : 'Project 1',
+    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image : "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+    technologies : ['html', 'css', 'Ruby'],
+    live : 'https://sanja969.github.io/Portfolio/',
+    source : 'https://github.com/Sanja969/Portfolio'
+  },
+  project2 = {
+    name : 'Project 2',
+    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image : "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+    technologies : ['html', 'jasascript', 'css'],
+    live : 'https://sanja969.github.io/Portfolio/',
+    source : 'https://github.com/Sanja969/Portfolio'
+  },
+  project3 = {
+    name : 'Project 3',
+    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image : "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+    technologies : ['html', 'css', 'Ruby'],
+    live : 'https://sanja969.github.io/Portfolio/',
+    source : 'https://github.com/Sanja969/Portfolio'
+  },
+  project4 = {
+    name : 'Project 4',
+    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image : "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+    technologies : ['html', 'bootsrap', 'css'],
+    live : 'https://sanja969.github.io/Portfolio/',
+    source : 'https://github.com/Sanja969/Portfolio'
+  },
+  project5 = {
+    name : 'Project 5',
+    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image : "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+    technologies : ['html', 'javascript', 'css'],
+    live : 'https://sanja969.github.io/Portfolio/',
+    source : 'https://github.com/Sanja969/Portfolio'
+  },
+  project6 = {
+    name : 'Project 6',
+    description : 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image : "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+    technologies : ['html', 'css', 'Ruby'],
+    live : 'https://sanja969.github.io/Portfolio/',
+    source : 'https://github.com/Sanja969/Portfolio'
+  },
+];
+
+const table = document.querySelector('.table');
+
+
+for (let i = 0; i < projects.length; i +=1) {
+  const projectBox = document.querySelector('.workProjectHide').cloneNode(true);
+  projectBox.classList.remove('workProjectHide');
+  projectBox.classList.add('workProject');
+  projectBox.children[0].textContent = projects[i].name;
+  projectBox.children[1].textContent = projects[i].description;
+  projectBox.style.background = projects[i].image;
+  for(let j = 0; j < 3; j += 1) {
+    projectBox.children[2].children[j].textContent = projects[i].technologies[j];
+    projectBox.children[2].children[j].style.background = 'rgba(255, 255, 255, 0.24)';
+    projectBox.children[2].children[j].style.padding = '8px 12px';
+
+  }
+  
+  table.appendChild(projectBox);
+  const popupProject = popup.cloneNode(true);
+  document.body.appendChild(popupProject);
+
+  function hidePopup() {
+    popupProject.style.display = 'none';
+  }
+  
+  function showPopup() {
+    popupProject.style.display = 'flex';
+  }
+
+  function seeLive() {
+    location.href = projects[i].live;
+  }
+
+  function seeSource() {
+    location.href = projects[i].source;
+  }
+
+  projectBox.children[3].addEventListener('click', showPopup);
+  for(let j = 0; j < 3; j += 1) {
+    popupProject.children[0].children[1].children[j].textContent = projects[i].technologies[j];
+  }
+  popupProject.children[0].children[0].children[0].addEventListener('click', hidePopup);
+
+  popupProject.children[0].children[4].children[0].addEventListener('click', seeLive);
+  popupProject.children[0].children[4].children[1].addEventListener('click', seeSource);
+}
