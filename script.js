@@ -90,9 +90,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-let project1, project2, project3, project4, project5, project6;
-
-project1 = {
+const project1 = {
   name: 'Project 1',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
@@ -100,7 +98,7 @@ project1 = {
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
 };
-project2 = {
+const project2 = {
   name: 'Project 2',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
@@ -108,7 +106,7 @@ project2 = {
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
 };
-project3 = {
+const project3 = {
   name: 'Project 3',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
@@ -116,7 +114,7 @@ project3 = {
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
 };
-project4 = {
+const project4 = {
   name: 'Project 4',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
@@ -124,7 +122,7 @@ project4 = {
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
 };
-project5 = {
+const project5 = {
   name: 'Project 5',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
@@ -132,7 +130,7 @@ project5 = {
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
 };
-project6 = {
+const project6 = {
   name: 'Project 6',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
