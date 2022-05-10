@@ -919,19 +919,6 @@ footer {
     justify-content: left;
     align-items: center;
   }
-  
-  .popup > div > button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 10px;
-  }
-  
-  .popup > div > button >img {
-    margin-left: 5px;
-  }
 }
 
 .workProjectHide {

@@ -11,8 +11,6 @@ function showMobileMenu() {
   containerMobiMenu.style.display = 'block';
 }
 
-
-
 mobileMenu.className = 'mobile-menu';
 mobileMenu.innerHTML = '<img><ul class="menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
 document.body.appendChild(containerMobiMenu);
@@ -166,28 +164,20 @@ for (let i = 0; i < projects.length; i +=1) {
   const popupProject = popup.cloneNode(true);
   document.body.appendChild(popupProject);
 
-  function hidePopup() {
-    popupProject.style.display = 'none';
-  }
-  
-  function showPopup() {
+  projectBox.children[3].addEventListener('click', function showPopup() {
     popupProject.style.display = 'flex';
-  }
-
-  function seeLive() {
-    location.href = projects[i].live;
-  }
-
-  function seeSource() {
-    location.href = projects[i].source;
-  }
-
-  projectBox.children[3].addEventListener('click', showPopup);
-  for(let j = 0; j < 3; j += 1) {
+  });
+  for (let j = 0; j < 3; j += 1) {
     popupProject.children[0].children[1].children[j].textContent = projects[i].technologies[j];
   }
-  popupProject.children[0].children[0].children[0].addEventListener('click', hidePopup);
+  popupProject.children[0].children[0].children[0].addEventListener('click', function hidePopup() {
+    popupProject.style.display = 'none';
+  });
 
-  popupProject.children[0].children[4].children[0].addEventListener('click', seeLive);
-  popupProject.children[0].children[4].children[1].addEventListener('click', seeSource);
+  popupProject.children[0].children[4].children[0].addEventListener('click', function seeLive() {
+    window.location.href = projects[i].live;
+  });
+  popupProject.children[0].children[4].children[1].addEventListener('click', function seeSource() {
+    window.location.href = projects[i].source;
+  });
 }
