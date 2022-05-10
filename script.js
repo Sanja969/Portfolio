@@ -92,54 +92,56 @@ window.addEventListener('scroll', () => {
   });
 });
 
+let project1, project2, project3, project4, project5, project6;
+
 const projects = [
   project1 = {
-    name:'Project 1',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image:"#f3f3f3 url('Icons/article2.png') no-repeat left top",
-    technologies:['html', 'css', 'Ruby'],
-    live:'https://sanja969.github.io/Portfolio/',
-    source:'https://github.com/Sanja969/Portfolio'
+    name: 'Project 1',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+    technologies: ['html', 'css', 'Ruby'],
+    live: 'https://sanja969.github.io/Portfolio/',
+    source: 'https://github.com/Sanja969/Portfolio',
   },
   project2 = {
-    name:'Project 2',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image:"#f3f3f3 url('Icons/article3.png') no-repeat left top",
-    technologies:['html', 'jasascript', 'css'],
-    live:'https://sanja969.github.io/Portfolio/',
-    source:'https://github.com/Sanja969/Portfolio'
+    name: 'Project 2',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+    technologies: ['html', 'jasascript', 'css'],
+    live: 'https://sanja969.github.io/Portfolio/',
+    source: 'https://github.com/Sanja969/Portfolio',
   },
   project3 = {
-    name:'Project 3',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image:"#f3f3f3 url('Icons/article4.png') no-repeat left top",
-    technologies:['html', 'css', 'Ruby'],
-    live:'https://sanja969.github.io/Portfolio/',
-    source:'https://github.com/Sanja969/Portfolio'
+    name: 'Project 3',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+    technologies: ['html', 'css', 'Ruby'],
+    live: 'https://sanja969.github.io/Portfolio/',
+    source: 'https://github.com/Sanja969/Portfolio',
   },
   project4 = {
-    name:'Project 4',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image:"#f3f3f3 url('Icons/article2.png') no-repeat left top",
-    technologies:['html', 'bootsrap', 'css'],
-    live:'https://sanja969.github.io/Portfolio/',
-    source:'https://github.com/Sanja969/Portfolio'
+    name: 'Project 4',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+    technologies: ['html', 'bootsrap', 'css'],
+    live: 'https://sanja969.github.io/Portfolio/',
+    source: 'https://github.com/Sanja969/Portfolio',
   },
   project5 = {
-    name:'Project 5',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image:"#f3f3f3 url('Icons/article3.png') no-repeat left top",
-    technologies:['html', 'javascript', 'css'],
-    live:'https://sanja969.github.io/Portfolio/',
-    source:'https://github.com/Sanja969/Portfolio'
+    name: 'Project 5',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+    technologies: ['html', 'javascript', 'css'],
+    live: 'https://sanja969.github.io/Portfolio/',
+    source: 'https://github.com/Sanja969/Portfolio',
   },
   project6 = {
-    name:'Project 6',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image:"#f3f3f3 url('Icons/article4.png') no-repeat left top",
-    technologies:['html', 'css', 'Ruby'],
-    live:'https://sanja969.github.io/Portfolio/',
-    source:'https://github.com/Sanja969/Portfolio'
+    name: 'Project 6',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+    technologies: ['html', 'css', 'Ruby'],
+    live: 'https://sanja969.github.io/Portfolio/',
+    source: 'https://github.com/Sanja969/Portfolio',
   },
 ];
 
