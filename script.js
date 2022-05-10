@@ -141,7 +141,7 @@ const project6 = {
 
 const projects = [project1, project2, project3, project4, project5, project6];
 
-const table = document.querySelector('.table');
+const table = document.querySelector('#table');
 
 for (let i = 0; i < projects.length; i += 1) {
   const projectBox = document.querySelector('.workProjectHide').cloneNode(true);
@@ -177,3 +177,9 @@ for (let i = 0; i < projects.length; i += 1) {
     window.location.href = projects[i].source;
   });
 }
+
+const seeProjectsBtn = document.querySelector('.storyProjectBtn');
+
+seeProjectsBtn.addEventListener('click', () => {
+  window.location = '#table';
+})
