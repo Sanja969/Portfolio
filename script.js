@@ -102,7 +102,7 @@ const project2 = {
   name: 'Project 2',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
-  technologies: ['html', 'jasascript', 'css'],
+  technologies: ['html', 'javascript', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
 };
