@@ -164,20 +164,20 @@ for (let i = 0; i < projects.length; i +=1) {
   const popupProject = popup.cloneNode(true);
   document.body.appendChild(popupProject);
 
-  projectBox.children[3].addEventListener('click', function showPopup() {
+  projectBox.children[3].addEventListener('click', () => {
     popupProject.style.display = 'flex';
   });
   for (let j = 0; j < 3; j += 1) {
     popupProject.children[0].children[1].children[j].textContent = projects[i].technologies[j];
   }
-  popupProject.children[0].children[0].children[0].addEventListener('click', function hidePopup() {
+  popupProject.children[0].children[0].children[0].addEventListener('click', function () {
     popupProject.style.display = 'none';
   });
 
-  popupProject.children[0].children[4].children[0].addEventListener('click', function seeLive() {
+  popupProject.children[0].children[4].children[0].addEventListener('click', function () {
     window.location.href = projects[i].live;
   });
-  popupProject.children[0].children[4].children[1].addEventListener('click', function seeSource() {
+  popupProject.children[0].children[4].children[1].addEventListener('click', function () {
     window.location.href = projects[i].source;
   });
 }
