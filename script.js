@@ -165,8 +165,10 @@ for (let i = 0; i < projects.length; i += 1) {
   });
   for (let j = 0; j < 3; j += 1) {
     popupProject.children[0].children[1].children[j].textContent = projects[i].technologies[j];
+    popupProject.children[0].children[0].children[0].textContent = projects[i].name;
+    popupProject.children[0].children[3].textContent = projects[i].description;
   }
-  popupProject.children[0].children[0].children[0].addEventListener('click', () => {
+  popupProject.children[0].children[0].children[1].addEventListener('click', () => {
     popupProject.style.display = 'none';
   });
 
