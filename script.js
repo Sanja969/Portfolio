@@ -153,9 +153,9 @@ for (let i = 0; i < projects.length; i += 1) {
   for (let j = 0; j < 3; j += 1) {
     projectBox.children[2].children[j].textContent = projects[i].technologies[j];
     projectBox.children[2].children[j].style.background = 'rgba(255, 255, 255, 0.24)';
-    projectBox.children[2].children[j].style.padding = '8px';
-
+    projectBox.children[2].children[j].style.padding = '8px 12px';
   }
+
   table.appendChild(projectBox);
   const popupProject = popup.cloneNode(true);
   document.body.appendChild(popupProject);
