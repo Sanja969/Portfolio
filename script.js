@@ -92,74 +92,72 @@ window.addEventListener('scroll', () => {
 
 let project1, project2, project3, project4, project5, project6;
 
-const projects = [
-  project1 = {
-    name: 'Project 1',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
-    technologies: ['html', 'css', 'Ruby'],
-    live: 'https://sanja969.github.io/Portfolio/',
-    source: 'https://github.com/Sanja969/Portfolio',
-  },
-  project2 = {
-    name: 'Project 2',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
-    technologies: ['html', 'jasascript', 'css'],
-    live: 'https://sanja969.github.io/Portfolio/',
-    source: 'https://github.com/Sanja969/Portfolio',
-  },
-  project3 = {
-    name: 'Project 3',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
-    technologies: ['html', 'css', 'Ruby'],
-    live: 'https://sanja969.github.io/Portfolio/',
-    source: 'https://github.com/Sanja969/Portfolio',
-  },
-  project4 = {
-    name: 'Project 4',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
-    technologies: ['html', 'bootsrap', 'css'],
-    live: 'https://sanja969.github.io/Portfolio/',
-    source: 'https://github.com/Sanja969/Portfolio',
-  },
-  project5 = {
-    name: 'Project 5',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
-    technologies: ['html', 'javascript', 'css'],
-    live: 'https://sanja969.github.io/Portfolio/',
-    source: 'https://github.com/Sanja969/Portfolio',
-  },
-  project6 = {
-    name: 'Project 6',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
-    technologies: ['html', 'css', 'Ruby'],
-    live: 'https://sanja969.github.io/Portfolio/',
-    source: 'https://github.com/Sanja969/Portfolio',
-  },
-];
+project1 = {
+  name: 'Project 1',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+  image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+  technologies: ['html', 'css', 'Ruby'],
+  live: 'https://sanja969.github.io/Portfolio/',
+  source: 'https://github.com/Sanja969/Portfolio',
+};
+project2 = {
+  name: 'Project 2',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+  image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+  technologies: ['html', 'jasascript', 'css'],
+  live: 'https://sanja969.github.io/Portfolio/',
+  source: 'https://github.com/Sanja969/Portfolio',
+};
+project3 = {
+  name: 'Project 3',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+  image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+  technologies: ['html', 'css', 'Ruby'],
+  live: 'https://sanja969.github.io/Portfolio/',
+  source: 'https://github.com/Sanja969/Portfolio',
+};
+project4 = {
+  name: 'Project 4',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+  image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+  technologies: ['html', 'bootsrap', 'css'],
+  live: 'https://sanja969.github.io/Portfolio/',
+  source: 'https://github.com/Sanja969/Portfolio',
+};
+project5 = {
+  name: 'Project 5',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+  image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+  technologies: ['html', 'javascript', 'css'],
+  live: 'https://sanja969.github.io/Portfolio/',
+  source: 'https://github.com/Sanja969/Portfolio',
+};
+project6 = {
+  name: 'Project 6',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+  image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+  technologies: ['html', 'css', 'Ruby'],
+  live: 'https://sanja969.github.io/Portfolio/',
+  source: 'https://github.com/Sanja969/Portfolio',
+};
+
+const projects = [project1, project2, project3, project4, project5, project6];
 
 const table = document.querySelector('.table');
 
-
-for (let i = 0; i < projects.length; i +=1) {
+for (let i = 0; i < projects.length; i += 1) {
   const projectBox = document.querySelector('.workProjectHide').cloneNode(true);
   projectBox.classList.remove('workProjectHide');
   projectBox.classList.add('workProject');
   projectBox.children[0].textContent = projects[i].name;
   projectBox.children[1].textContent = projects[i].description;
   projectBox.style.background = projects[i].image;
-  for(let j = 0; j < 3; j += 1) {
+  for (let j = 0; j < 3; j += 1) {
     projectBox.children[2].children[j].textContent = projects[i].technologies[j];
     projectBox.children[2].children[j].style.background = 'rgba(255, 255, 255, 0.24)';
-    projectBox.children[2].children[j].style.padding = '8px 12px';
+    projectBox.children[2].children[j].style.padding = '8px';
 
   }
-  
   table.appendChild(projectBox);
   const popupProject = popup.cloneNode(true);
   document.body.appendChild(popupProject);
@@ -170,14 +168,14 @@ for (let i = 0; i < projects.length; i +=1) {
   for (let j = 0; j < 3; j += 1) {
     popupProject.children[0].children[1].children[j].textContent = projects[i].technologies[j];
   }
-  popupProject.children[0].children[0].children[0].addEventListener('click', function () {
+  popupProject.children[0].children[0].children[0].addEventListener('click', () => {
     popupProject.style.display = 'none';
   });
 
-  popupProject.children[0].children[4].children[0].addEventListener('click', function () {
+  popupProject.children[0].children[4].children[0].addEventListener('click', () => {
     window.location.href = projects[i].live;
   });
-  popupProject.children[0].children[4].children[1].addEventListener('click', function () {
+  popupProject.children[0].children[4].children[1].addEventListener('click', () => {
     window.location.href = projects[i].source;
   });
 }
