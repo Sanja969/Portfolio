@@ -186,7 +186,7 @@ seeProjectsBtn.addEventListener('click', () => {
   window.location = '#table';
 });
 
-const form  = document.getElementById('contactForm');
+const form = document.getElementById('contactForm');
 const nameC = document.getElementById('name-contact');
 const email = document.getElementById('mail-contact');
 const submit = document.querySelector('.submit-contact');
@@ -196,38 +196,38 @@ const NAME_REQUIRED = 'Please enter your name';
 
 function showError(input, message) {
   const errorMsg = input.parentNode.querySelector('.errorMsg');
-	errorMsg.textContent = message;
+  errorMsg.textContent = message;
   input.classList.add = 'errorMsg';
-	return false;
+  return false;
 }
 
 function showSuccess(input) {
   const errorMsg = input.parentNode.querySelector('.errorMsg');
   errorMsg.textContent = '';
-	input.classList.add = 'success';
-	return true;
+  input.classList.add = 'success';
+  return true;
 }
 
 function hasValue(input, message) {
-	if (input.value.trim() === '') {
-		return showError(input, message);
-	}
-	return showSuccess(input);
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
 }
 
 function validateEmail(input, requiredMsg, invalidMsg) {
 
-	if (!hasValue(input, requiredMsg)) {
-		return false;
-	}
+if (!hasValue(input, requiredMsg)) {
+  return false;
+}
 
-	const emailRegex = /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+const emailRegex = /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
 
-	const email = input.value.trim();
-	if (!emailRegex.test(email)) {
-		return showError(input, invalidMsg);
-	}
-	return true;
+const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+  return showError(input, invalidMsg);
+  }
+  return true;
 }
 
 form.addEventListener('input', function (event) {
@@ -243,11 +243,11 @@ submit.addEventListener('click', () => {
     errorMsg.textContent = 'You need to fill all required fields';
     errorMsg.style.color = 'red';
     return;
-  }
+}
 
-  if(!email.validity.valid) {
-    errorMsg.textContent = 'You didn\'t put data in valid form and the form is not send';
-    errorMsg.style.color = 'red';
-    return;
-  } 
+if(!email.validity.valid) {
+  errorMsg.textContent = 'You didn\'t put data in valid form and the form is not send';
+  errorMsg.style.color = 'red';
+  return;
+} 
 });
