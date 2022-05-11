@@ -93,7 +93,7 @@ window.addEventListener('scroll', () => {
 const project1 = {
   name: 'Project 1',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+  image: '#f3f3f3 url("Icons/article2.png") no-repeat left top',
   technologies: ['html', 'css', 'Ruby'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -101,7 +101,7 @@ const project1 = {
 const project2 = {
   name: 'Project 2',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+  image: '#f3f3f3 url("Icons/article3.png") no-repeat left top',
   technologies: ['html', 'javascript', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -109,7 +109,7 @@ const project2 = {
 const project3 = {
   name: 'Project 3',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+  image: '#f3f3f3 url("Icons/article4.png") no-repeat left top',
   technologies: ['html', 'css', 'Ruby'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -117,7 +117,7 @@ const project3 = {
 const project4 = {
   name: 'Project 4',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: "#f3f3f3 url('Icons/article2.png') no-repeat left top",
+  image: '#f3f3f3 url("Icons/article2.png") no-repeat left top',
   technologies: ['html', 'bootsrap', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -125,7 +125,7 @@ const project4 = {
 const project5 = {
   name: 'Project 5',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: "#f3f3f3 url('Icons/article3.png') no-repeat left top",
+  image: '#f3f3f3 url("Icons/article3.png") no-repeat left top',
   technologies: ['html', 'javascript', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -133,7 +133,7 @@ const project5 = {
 const project6 = {
   name: 'Project 6',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: "#f3f3f3 url('Icons/article4.png') no-repeat left top",
+  image: '#f3f3f3 url("Icons/article4.png") no-repeat left top',
   technologies: ['html', 'css', 'Ruby'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -184,4 +184,68 @@ const seeProjectsBtn = document.querySelector('.storyProjectBtn');
 
 seeProjectsBtn.addEventListener('click', () => {
   window.location = '#table';
+});
+
+const form = document.getElementById('contactForm');
+const nameC = document.getElementById('name-contact');
+const email = document.getElementById('mail-contact');
+const submit = document.querySelector('.submit-contact');
+const EMAIL_REQUIRED = 'This field is required :)';
+const EMAIL_INVALID = 'Please enter data in email format and it has to be in lower case "example@mail.com"';
+const NAME_REQUIRED = 'Please enter your name';
+
+function showError(input, message) {
+  const errorMsg = input.parentNode.querySelector('.error');
+  errorMsg.textContent = message;
+  input.classList.add = 'errorMsg';
+  return false;
+}
+
+function showSuccess(input) {
+  const errorMsg = input.parentNode.querySelector('.error');
+  errorMsg.textContent = '';
+  input.classList.add = 'success';
+  return true;
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+
+  const emailRegex = /^([a-z0-9_]+)@[a-z0-9-]+([a-z0-9-]+)*([a-z]{2,3})$/;
+
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+
+form.addEventListener('input', (event) => {
+  hasValue(nameC, NAME_REQUIRED);
+  validateEmail(email, EMAIL_REQUIRED, EMAIL_INVALID);
+  event.preventDefault();
+});
+
+submit.addEventListener('click', () => {
+  const errorMsg = submit.parentNode.querySelector('.error');
+
+  if (!hasValue(email, EMAIL_REQUIRED)) {
+    errorMsg.textContent = 'You need to fill all required fields';
+    errorMsg.style.color = 'red';
+    return;
+  }
+
+  if (!email.validity.valid) {
+    errorMsg.textContent = 'You didn\'t put data in valid format and the form is not send';
+    errorMsg.style.color = 'red';
+  }
 });

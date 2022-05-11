@@ -444,6 +444,11 @@ header {
   margin: 120px 24px 73px 24px;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 #contactForm {
   width: 87.2%;
   margin: 0 24px;
@@ -852,7 +857,6 @@ footer {
 
   .submit-contact {
     width: 122px;
-    margin-left: -85%;
     margin-top: -20px;
   }
 
@@ -920,4 +924,19 @@ footer {
 
 .workProjectHide {
   display: none;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: rgb(48, 42, 42);
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+input {
+  color: #1c1a19;
 }
