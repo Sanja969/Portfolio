@@ -245,7 +245,7 @@ submit.addEventListener('click', () => {
   }
 
   if (!email.validity.valid) {
-    errorMsg.textContent = 'You didn\'t put data in valid form and the form is not send';
+    errorMsg.textContent = 'You didn\'t put data in valid format and the form is not send';
     errorMsg.style.color = 'red';
   }
 });
