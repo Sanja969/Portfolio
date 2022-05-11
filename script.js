@@ -218,15 +218,15 @@ function hasValue(input, message) {
 function validateEmail(input, requiredMsg, invalidMsg) {
   if (!hasValue(input, requiredMsg)) {
     return false;
-}
+  }
 
-const emailRegex = /^([a-z0-9_\-]+)@[a-z0-9-]+([a-z0-9-]+)*([a-z]{2,3})$/;
+  const emailRegex = /^([a-z0-9_]+)@[a-z0-9-]+([a-z0-9-]+)*([a-z]{2,3})$/;
 
 const email = input.value.trim();
   if (!emailRegex.test(email)) {
-  return showError(input, invalidMsg);
-  }
-  return true;
+    return showError(input, invalidMsg);
+    }
+    return true;
 }
 
 form.addEventListener('input', (event) => {
@@ -238,19 +238,14 @@ form.addEventListener('input', (event) => {
 submit.addEventListener('click', () => {
   const errorMsg = submit.parentNode.querySelector('.error');
 
-  if(!hasValue(email, EMAIL_REQUIRED)) {
+  if (!hasValue(email, EMAIL_REQUIRED)) {
     errorMsg.textContent = 'You need to fill all required fields';
     errorMsg.style.color = 'red';
     return;
-}
+  }
 
-  if(!email.validity.valid) {
+  if (!email.validity.valid) {
     errorMsg.textContent = 'You didn\'t put data in valid form and the form is not send';
     errorMsg.style.color = 'red';
-    return;
-}
-
-  else {
-    alert("Data were sent");
   }
 });
