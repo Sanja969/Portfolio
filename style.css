@@ -444,6 +444,11 @@ header {
   margin: 120px 24px 73px 24px;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 #contactForm {
   width: 87.2%;
   margin: 0 24px;
@@ -922,7 +927,7 @@ footer {
 }
 
 .error {
-  width  : 100%;
+  width: 100%;
   padding: 0;
   font-size: 80%;
   color: rgb(48, 42, 42);
@@ -934,9 +939,4 @@ footer {
 
 input {
   color: #1c1a19;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
 }
