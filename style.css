@@ -852,7 +852,6 @@ footer {
 
   .submit-contact {
     width: 122px;
-    margin-left: -85%;
     margin-top: -20px;
   }
 
@@ -920,4 +919,24 @@ footer {
 
 .workProjectHide {
   display: none;
+}
+
+.error {
+  width  : 100%;
+  padding: 0;
+  font-size: 80%;
+  color: rgb(48, 42, 42);
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+input {
+  color: #1c1a19;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
 }

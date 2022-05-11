@@ -185,3 +185,72 @@ const seeProjectsBtn = document.querySelector('.storyProjectBtn');
 seeProjectsBtn.addEventListener('click', () => {
   window.location = '#table';
 });
+
+const form  = document.getElementById('contactForm');
+const nameC = document.getElementById("name-contact");
+const email = document.getElementById("mail-contact");
+const submit = document.querySelector(".submit-contact");
+const EMAIL_REQUIRED = "This field is required :)";
+const EMAIL_INVALID = "Please enter data in email format and it has to be in lower case 'example@mail.com'";
+const NAME_REQUIRED = "Please enter your name";
+
+function showError(input, message) {
+  const error = input.parentNode.querySelector(".error");
+	error.textContent = message;
+	input.classList.add = "error";
+	return false;
+}
+
+function showSuccess(input) {
+  const error = input.parentNode.querySelector(".error");
+  error.textContent = '';
+	input.classList.add = "success";
+	return true;
+}
+
+function hasValue(input, message) {
+	if (input.value.trim() === "") {
+		return showError(input, message);
+	}
+	return showSuccess(input);
+}
+
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+
+	if (!hasValue(input, requiredMsg)) {
+		return false;
+	}
+
+	const emailRegex = /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+	return true;
+}
+
+form.addEventListener("input", function (event) {
+    hasValue(nameC, NAME_REQUIRED);
+    validateEmail(email, EMAIL_REQUIRED, EMAIL_INVALID);
+    event.preventDefault();
+});
+
+submit.addEventListener('click', () => {
+  const error = submit.parentNode.querySelector(".error");
+
+  if(!hasValue(email, EMAIL_REQUIRED)) {
+    error.textContent = "You need to fill all required fields";
+    error.style.color = 'red';
+    return;
+  }
+
+  if(!email.validity.valid) {
+    error.textContent = "You didn't put data in valid form and the form is not send";
+    error.style.color = 'red';
+    return;
+  }
+
+  
+});
