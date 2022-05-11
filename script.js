@@ -195,15 +195,15 @@ const EMAIL_INVALID = 'Please enter data in email format and it has to be in low
 const NAME_REQUIRED = 'Please enter your name';
 
 function showError(input, message) {
-  const error = input.parentNode.querySelector('.error');
-	error.textContent = message;
-	input.classList.add = 'error';
+  const errorMsg = input.parentNode.querySelector('.errorMsg');
+	errorMsg.textContent = message;
+  input.classList.add = 'errorMsg';
 	return false;
 }
 
 function showSuccess(input) {
-  const error = input.parentNode.querySelector('.error');
-  error.textContent = '';
+  const errorMsg = input.parentNode.querySelector('.errorMsg');
+  errorMsg.textContent = '';
 	input.classList.add = 'success';
 	return true;
 }
@@ -214,7 +214,6 @@ function hasValue(input, message) {
 	}
 	return showSuccess(input);
 }
-
 
 function validateEmail(input, requiredMsg, invalidMsg) {
 
@@ -238,17 +237,17 @@ form.addEventListener('input', function (event) {
 });
 
 submit.addEventListener('click', () => {
-  const error = submit.parentNode.querySelector('.error');
+  const errorMsg = submit.parentNode.querySelector('.errorMsg');
 
   if(!hasValue(email, EMAIL_REQUIRED)) {
-    error.textContent = 'You need to fill all required fields';
-    error.style.color = 'red';
+    errorMsg.textContent = 'You need to fill all required fields';
+    errorMsg.style.color = 'red';
     return;
   }
 
   if(!email.validity.valid) {
-    error.textContent = 'You didn\'t put data in valid form and the form is not send';
-    error.style.color = 'red';
+    errorMsg.textContent = 'You didn\'t put data in valid form and the form is not send';
+    errorMsg.style.color = 'red';
     return;
   } 
 });
