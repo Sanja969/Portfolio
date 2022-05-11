@@ -12,7 +12,7 @@ function showMobileMenu() {
 }
 
 mobileMenu.className = 'mobile-menu';
-mobileMenu.innerHTML = '<img><ul class='menu'><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
+mobileMenu.innerHTML = '<img><ul class="menu"><li><a>Portfolio</a></li><li><a>About</a></li><li><a>Contact</a></li></ul>';
 document.body.appendChild(containerMobiMenu);
 containerMobiMenu.appendChild(mobileMenu);
 containerMobiMenu.appendChild(line);
@@ -93,7 +93,7 @@ window.addEventListener('scroll', () => {
 const project1 = {
   name: 'Project 1',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: '#f3f3f3 url('Icons/article2.png') no-repeat left top',
+  image: '#f3f3f3 url("Icons/article2.png") no-repeat left top',
   technologies: ['html', 'css', 'Ruby'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -101,7 +101,7 @@ const project1 = {
 const project2 = {
   name: 'Project 2',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: '#f3f3f3 url('Icons/article3.png') no-repeat left top',
+  image: '#f3f3f3 url("Icons/article3.png") no-repeat left top',
   technologies: ['html', 'javascript', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -109,7 +109,7 @@ const project2 = {
 const project3 = {
   name: 'Project 3',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: '#f3f3f3 url('Icons/article4.png') no-repeat left top',
+  image: '#f3f3f3 url("Icons/article4.png") no-repeat left top',
   technologies: ['html', 'css', 'Ruby'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -117,7 +117,7 @@ const project3 = {
 const project4 = {
   name: 'Project 4',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: '#f3f3f3 url('Icons/article2.png') no-repeat left top',
+  image: '#f3f3f3 url("Icons/article2.png") no-repeat left top',
   technologies: ['html', 'bootsrap', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -125,7 +125,7 @@ const project4 = {
 const project5 = {
   name: 'Project 5',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: '#f3f3f3 url('Icons/article3.png') no-repeat left top',
+  image: '#f3f3f3 url("Icons/article3.png") no-repeat left top',
   technologies: ['html', 'javascript', 'css'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -133,7 +133,7 @@ const project5 = {
 const project6 = {
   name: 'Project 6',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-  image: '#f3f3f3 url('Icons/article4.png') no-repeat left top',
+  image: '#f3f3f3 url("Icons/article4.png") no-repeat left top',
   technologies: ['html', 'css', 'Ruby'],
   live: 'https://sanja969.github.io/Portfolio/',
   source: 'https://github.com/Sanja969/Portfolio',
@@ -191,7 +191,7 @@ const nameC = document.getElementById('name-contact');
 const email = document.getElementById('mail-contact');
 const submit = document.querySelector('.submit-contact');
 const EMAIL_REQUIRED = 'This field is required :)';
-const EMAIL_INVALID = 'Please enter data in email format and it has to be in lower case 'example@mail.com'';
+const EMAIL_INVALID = 'Please enter data in email format and it has to be in lower case "example@mail.com"';
 const NAME_REQUIRED = 'Please enter your name';
 
 function showError(input, message) {
@@ -247,7 +247,7 @@ submit.addEventListener('click', () => {
   }
 
   if(!email.validity.valid) {
-    error.textContent = 'You didn't put data in valid form and the form is not send';
+    error.textContent = 'You didn\'t put data in valid form and the form is not send';
     error.style.color = 'red';
     return;
   } 
