@@ -222,11 +222,11 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
   const emailRegex = /^([a-z0-9_]+)@[a-z0-9-]+([a-z0-9-]+)*([a-z]{2,3})$/;
 
-const email = input.value.trim();
+  const email = input.value.trim();
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
-    }
-    return true;
+  }
+  return true;
 }
 
 form.addEventListener('input', (event) => {
