@@ -2,16 +2,15 @@
 
 # Portfolio
 
-> This is example of portfolio using Figma template. For start I build 2 sections - the header and the headline. For both section I use flex boxes and I stick to style of Figma template. 
-In milestone 2 I create Work and aboutMe section. I use flex and grid boxis for these two sections.
-In milestone 3 I create contact section. I use forms for this section
-
-
+> This is template of portfolio. I made headline, project, about me, and constact section.
+> I was stick to figma template
+> In project section I made class for making projects. When you click on any of that pop up window will appear and you see all imforamtion about project, with source link and live link.
+> In contact setcion I made form for sending messages
 
 
 ## Built With
 
-- Language: HTML
+- Language: Javascript
 - Technologies: CSS, Linter, git, 
 - Templates: Figma
 
