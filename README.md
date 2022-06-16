@@ -4,7 +4,7 @@
 
 > This is template of portfolio. I made headline, project, about me, and constact section.
 > I was stick to figma template
-> In project section I made class for making projects. When you click on any of that pop up window will appear and you see all imforamtion about project, with source link and live link.
+> In project section I made class for making projects. When you click on any of that pop up window will appear and you see all info about project, with source link and live link.
 > In contact setcion I made form for sending messages
 
 
